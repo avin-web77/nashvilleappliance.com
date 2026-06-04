@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casino utan Svensk Licens 2024 – Spela utan Spelpaus | CasinoGuiden</title>
+  <style>
+    /* ─── Palette ───────────────────────────────────────────
+       Navy   #000B26
+       Blue   #7CA7EB
+       Choc   #402924
+       Camel  #CBE290
+    ─────────────────────────────────────────────────────── */
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #000B26;
+      --blue:    #7CA7EB;
+      --choc:    #402924;
+      --camel:   #CBE290;
+      --page-bg: #F0EFF6;
+      --white:   #FFFFFF;
+      --text:    #1A1F30;
+      --sub:     #4A4F62;
+      --muted:   #8A8E9B;
+      --border:  #DCDAE6;
+      --tint:    #E8E6F2;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--page-bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    a { color: var(--navy); text-decoration: none; }
+    a:hover { text-decoration: underline; color: var(--blue); }
+    strong { font-weight: 700; }
+
+    /* ─── HEADER ─────────────────────────────────────────── */
+    .site-header {
+      background: var(--navy);
+      border-bottom: 3px solid var(--blue);
+    }
+
+    .header-inner {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* ─── LOGO ───────────────────────────────────────────── */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+
+    .logo:hover { text-decoration: none; }
+
+    .logo-emblem {
+      width: 52px;
+      height: 52px;
+      background: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .logo-emblem::before {
+      content: '♠';
+      font-size: 28px;
+      color: var(--navy);
+      line-height: 1;
+    }
+
+    .logo-emblem-badge {
+      position: absolute;
+      bottom: -6px;
+      right: -6px;
+      width: 20px;
+      height: 20px;
+      background: var(--camel);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 10px;
+      font-weight: 900;
+      color: var(--navy);
+    }
+
+    .logo-text-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .logo-main {
+      font-size: 20px;
+      font-weight: 900;
+      color: var(--white);
+      letter-spacing: 1px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+
+    .logo-main span { color: var(--blue); }
+
+    .logo-sub {
+      font-size: 10px;
+      font-weight: 400;
+      color: var(--muted);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    /* ─── PAGE CONTAINER ─────────────────────────────────── */
+    .page-container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 36px 20px 60px;
+    }
+
+    /* ─── AUTHOR BLOCK (top) ─────────────────────────────── */
+    .author-block {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--blue);
+      padding: 22px 24px;
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      gap: 18px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .author-photo {
+      width: 70px;
+      height: 70px;
+      background: var(--tint);
+      border: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      flex-shrink: 0;
+      overflow: hidden;
+    }
+
+    .author-info-name {
+      font-size: 15px;
+      font-weight: 900;
+      color: var(--text);
+      margin-bottom: 3px;
+    }
+
+    .author-info-role {
+      font-size: 12px;
+      color: var(--blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 6px;
+    }
+
+    .author-info-desc {
+      font-size: 13px;
+      color: var(--sub);
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    .author-info-meta {
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .author-info-meta span { display: flex; align-items: center; gap: 4px; }
+
+    /* ─── HERO IMAGE ─────────────────────────────────────── */
+    .hero-image {
+      width: 100%;
+      height: 260px;
+      background: var(--navy);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-image-inner {
+      text-align: center;
+      z-index: 2;
+      position: relative;
+    }
+
+    .hero-image-title {
+      font-size: clamp(1.4rem, 4vw, 2.2rem);
+      font-weight: 900;
+      color: var(--white);
+      line-height: 1.2;
+      margin-bottom: 10px;
+    }
+
+    .hero-image-title em { font-style: normal; color: var(--blue); }
+
+    .hero-image-sub {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .hero-image::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(124,167,235,.04) 40px,
+        rgba(124,167,235,.04) 80px
+      );
+    }
+
+    .hero-image-suits {
+      font-size: 80px;
+      color: rgba(124,167,235,.08);
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .hero-image-suits-right {
+      font-size: 80px;
+      color: rgba(124,167,235,.08);
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    /* ─── PAGE TITLE ─────────────────────────────────────── */
+    .page-title {
+      font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    /* ─── ARTICLE TEXT ───────────────────────────────────── */
+    .art-p {
+      font-size: 15px;
+      color: var(--sub);
+      margin-bottom: 16px;
+      line-height: 1.75;
+    }
+
+    .art-p strong { color: var(--text); }
+
+    .section-h2 {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--text);
+      margin: 40px 0 12px;
+    }
+
+    .section-h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 26px 0 10px;
+    }
+
+    /* ─── CATEGORY CARDS ─────────────────────────────────── */
+    .cat-cards { margin: 24px 0 36px; }
+
+    .cat-card {
+      display: grid;
+      grid-template-columns: 155px 1fr auto;
+      border: 1px solid var(--border);
+      margin-bottom: 10px;
+      background: var(--white);
+    }
+
+    @media (max-width: 580px) {
+      .cat-card { grid-template-columns: 110px 1fr; }
+      .cat-cta-wrap { display: none; }
+    }
+
+    .cat-label {
+      padding: 18px 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 6px;
+    }
+
+    .cat-label-1 { background: #FFF8DC; }
+    .cat-label-2 { background: #E3F0FF; }
+    .cat-label-3 { background: #E5F7EC; }
+    .cat-label-4 { background: #FDE8E8; }
+    .cat-label-5 { background: #EDE8FF; }
+
+    .cat-label-text { font-size: 12px; font-weight: 900; color: var(--navy); line-height: 1.3; }
+    .cat-icon { font-size: 26px; }
+
+    .cat-body {
+      background: var(--navy);
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .cat-body-name { font-size: 13.5px; font-weight: 900; color: var(--white); min-width: 150px; line-height: 1.3; }
+
+    .cat-checks { list-style: none; flex: 1; }
+
+    .cat-checks li {
+      font-size: 12.5px;
+      color: #b8c8e0;
+      padding: 2px 0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .cat-checks li::before { content: '✓'; color: var(--camel); font-weight: 900; flex-shrink: 0; }
+
+    .cat-cta-wrap { background: var(--navy); padding: 0 18px; display: flex; align-items: center; }
+
+    .btn-cta {
+      display: inline-block;
+      background: var(--camel);
+      color: var(--navy);
+      font-size: 13px;
+      font-weight: 900;
+      padding: 11px 20px;
+      white-space: nowrap;
+      transition: opacity 0.15s;
+    }
+
+    .btn-cta:hover { opacity: 0.85; text-decoration: none; color: var(--navy); }
+
+    /* ─── TABLES ─────────────────────────────────────────── */
+    .t-wrap { overflow-x: auto; border: 1px solid var(--border); margin: 18px 0 30px; }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+
+    table thead tr { background: var(--navy); }
+
+    table thead th {
+      padding: 11px 14px;
+      color: var(--white);
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    table tbody tr { border-bottom: 1px solid var(--border); background: var(--white); }
+    table tbody tr:nth-child(even) { background: #F7F6FC; }
+
+    table tbody td { padding: 10px 14px; color: var(--sub); vertical-align: middle; }
+
+    .td-rank { font-weight: 700; color: var(--text); }
+    .td-name { color: var(--blue); font-weight: 700; }
+    .td-yes  { color: #2a8c4a; font-weight: 700; }
+    .td-no   { color: #c0392b; font-weight: 700; }
+    .td-bold { font-weight: 700; color: var(--text); }
+
+    /* ─── QUICK FACTS ────────────────────────────────────── */
+    .quick-facts {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--blue);
+      padding: 22px 26px;
+      margin: 26px 0;
+    }
+
+    .quick-facts h3 { font-size: 1.05rem; font-weight: 900; color: var(--text); margin-bottom: 14px; }
+
+    .qf-list { list-style: none; }
+
+    .qf-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13.5px;
+      color: var(--sub);
+      line-height: 1.55;
+    }
+
+    .qf-list li:last-child { border-bottom: none; }
+
+    .qf-icon {
+      width: 21px;
+      height: 21px;
+      background: var(--blue);
+      color: var(--white);
+      font-size: 11px;
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .qf-list strong { color: var(--text); }
+
+    /* ─── PROS CONS ──────────────────────────────────────── */
+    .pros-cons-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 22px 26px;
+      margin: 22px 0;
+    }
+
+    .pros-cons-wrap h3 { font-size: 1.05rem; font-weight: 900; margin-bottom: 18px; color: var(--text); }
+
+    .pros-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    @media (max-width: 520px) { .pros-cols { grid-template-columns: 1fr; } }
+
+    .pros-col-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .title-pros { color: #2a8c4a; }
+    .title-cons { color: #c0392b; }
+
+    .pros-list { list-style: none; }
+
+    .pros-list li {
+      font-size: 13.5px;
+      color: var(--sub);
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+      line-height: 1.5;
+    }
+
+    .pros-list li:last-child { border-bottom: none; }
+    .pros-list li::before { content: '•'; color: var(--blue); font-weight: 900; flex-shrink: 0; margin-top: 1px; }
+
+    /* ─── NOTICE BOXES ───────────────────────────────────── */
+    .notice {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--blue);
+      padding: 14px 18px;
+      font-size: 13.5px;
+      color: var(--sub);
+      margin: 18px 0;
+      line-height: 1.7;
+    }
+
+    .notice.warn  { border-left-color: #e6a817; background: #fffdf5; }
+    .notice.green { border-left-color: #2a8c4a; background: #f5fdf7; }
+
+    .notice-title { font-weight: 900; font-size: 13px; color: var(--text); margin-bottom: 5px; }
+
+    /* ─── BLOCKQUOTE ─────────────────────────────────────── */
+    .art-quote {
+      border-left: 4px solid var(--blue);
+      padding: 14px 20px;
+      background: var(--white);
+      margin: 22px 0;
+      font-size: 14.5px;
+      font-style: italic;
+      color: var(--navy);
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    /* ─── ACCORDION ──────────────────────────────────────── */
+    .accordion { margin: 18px 0; }
+
+    .acc-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      margin-bottom: 4px;
+    }
+
+    .acc-head {
+      padding: 14px 18px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+
+    .acc-head:hover { background: var(--tint); }
+
+    .acc-arrow { font-size: 11px; color: var(--muted); transition: transform 0.2s; flex-shrink: 0; }
+    .acc-item.open .acc-arrow { transform: rotate(180deg); }
+
+    .acc-body {
+      display: none;
+      padding: 0 18px 15px;
+      font-size: 13.5px;
+      color: var(--sub);
+      line-height: 1.75;
+      border-top: 1px solid var(--border);
+    }
+
+    .acc-item.open .acc-body { display: block; }
+    .acc-body p { margin-top: 12px; }
+
+    /* ─── RATING BARS ────────────────────────────────────── */
+    .rating-rows { margin: 14px 0 26px; }
+
+    .rating-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 13px;
+    }
+
+    .rating-row:last-child { border-bottom: none; }
+
+    .r-label { width: 150px; flex-shrink: 0; color: var(--sub); }
+    .r-bar { flex: 1; height: 7px; background: var(--tint); }
+    .r-fill { height: 100%; background: var(--blue); }
+    .r-val { width: 36px; text-align: right; font-weight: 700; color: var(--navy); }
+
+    /* ─── PAYMENT ────────────────────────────────────────── */
+    .pay-wrap { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+
+    .pay-chip {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 6px 13px;
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    /* ─── TRUST SECTION ──────────────────────────────────── */
+    .trust-section {
+      background: var(--tint);
+      border: 1px solid var(--border);
+      padding: 30px 26px;
+      margin: 36px 0;
+    }
+
+    .trust-section .section-h2 { margin-top: 0; }
+
+    /* ─── FOOTER ─────────────────────────────────────────── */
+    .site-footer {
+      background: var(--navy);
+      margin-top: 40px;
+    }
+
+    .footer-logo-only {
+      padding: 28px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .footer-logo-link { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .footer-logo-link:hover { text-decoration: none; }
+
+    .footer-emblem {
+      width: 42px;
+      height: 42px;
+      background: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--navy);
+      flex-shrink: 0;
+      position: relative;
+    }
+
+    .footer-emblem::after {
+      content: '✦';
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      width: 16px;
+      height: 16px;
+      background: var(--camel);
+      font-size: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--navy);
+      line-height: 16px;
+      text-align: center;
+    }
+
+    .footer-logo-txt { font-size: 15px; font-weight: 900; color: var(--white); line-height: 1.2; }
+    .footer-logo-txt span { display: block; font-size: 10px; font-weight: 400; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     HEADER — logo only
+════════════════════════════════════════════════════════ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <div class="logo-emblem">
+        <span class="logo-emblem-badge">★</span>
+      </div>
+      <div class="logo-text-wrap">
+        <div class="logo-main">Casino<span>Guiden</span></div>
+        <div class="logo-sub">utan svensk licens</div>
+      </div>
+    </a>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════
+     PAGE CONTAINER
+════════════════════════════════════════════════════════ -->
+<div class="page-container">
+
+  <!-- AUTHOR BLOCK -->
+  <div class="author-block">
+    <div class="author-photo">&#128100;</div>
+    <div>
+      <div class="author-info-name">Anders Lindgren</div>
+      <div class="author-info-role">Casinoexpert &amp; chefredaktör</div>
+      <div class="author-info-desc">
+        Anders har arbetat med spelrecensioner sedan 2015 och har personligen testat
+        över 300 casinon. Specialiserad på licensjuridik och bonusanalys.
+      </div>
+      <div class="author-info-meta">
+        <span>&#128197; Publicerad: 14 oktober 2024</span>
+        <span>&#9998; Faktagranskad av: Henrik Strand</span>
+        <span>&#128337; Lästid: ca 8 min</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="hero-image">
+    <span class="hero-image-suits">♠♣</span>
+    <div class="hero-image-inner">
+      <div class="hero-image-title">Casino utan <em>Svensk Licens</em> 2024</div>
+      <div class="hero-image-sub">Spela utan Spelpaus – Oberoende guide &amp; topplista</div>
+    </div>
+    <span class="hero-image-suits-right">♥♦</span>
+  </div>
+
+  <!-- PAGE TITLE -->
+  <h1 class="page-title">Casino utan Svensk Licens 2024 – Spela casino utan Spelpaus</h1>
+
+  <p class="art-p">
+    Ett <strong>casino utan svensk licens</strong> är detsamma som ett casino utan Spelpaus,
+    då dessa inte är licensierade av den svenska spelmyndigheten Spelinspektionen.
+  </p>
+
+  <p class="art-p">
+    Casinon utan svensk licens har ökat kraftigt i popularitet i Sverige. De kan erbjuda
+    <strong>bättre bonusar</strong>, större spelvariation samt högre insättnings- och
+    uttagsgränser än svenska licensierade casinon – utan den tresekundersregel och de
+    strikta omsättningskrav som följer med det svenska regelverket.
+  </p>
+
+  <p class="art-p">
+    Våra casinoexperter har granskat <strong>över 250 casinossajter</strong> och allt som rör
+    onlinecasinon utan svensk licens. Från för- och nackdelar till registrering, licensgivare
+    och hur man börjar spela. Och självklart har vi listat de bästa casinona utan svensk licens.
+  </p>
+
+  <!-- CATEGORY CARDS -->
+  <h2 class="section-h2">Rekommenderade typer av casino utan svensk licens</h2>
+  <p class="art-p">Klicka på listan för att hitta <strong>bästa casino utan svensk licens</strong> och Spelpaus i varje kategori.</p>
+
+  <div class="cat-cards">
+    <div class="cat-card">
+      <div class="cat-label cat-label-1">
+        <span class="cat-icon">&#127183;&#127183;&#127183;</span>
+        <span class="cat-label-text">Bästa<br>Casinon</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-body-name">Bästa casinon utan svensk licens</div>
+        <ul class="cat-checks">
+          <li>Bäst betygsatt</li>
+          <li>Många betalningsalternativ</li>
+          <li>Rättvisa spel</li>
+        </ul>
+      </div>
+      <div class="cat-cta-wrap"><a href="#topplista" class="btn-cta">Besök här</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-label cat-label-2">
+        <span class="cat-icon">&#9889;</span>
+        <span class="cat-label-text">Snabba<br>uttag</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-body-name">Casinon utan licens med snabba uttag</div>
+        <ul class="cat-checks">
+          <li>Snabba uttag</li>
+          <li>Kryptovalutor accepteras</li>
+          <li>Ingen fördröjning</li>
+        </ul>
+      </div>
+      <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-label cat-label-3">
+        <span class="cat-icon">&#128181;</span>
+        <span class="cat-label-text">Skattefria<br>casinon</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-body-name">Skattefria casinon utan svensk licens</div>
+        <ul class="cat-checks">
+          <li>Bästa skattefria casinon</li>
+          <li>Olika typer av bonusar</li>
+          <li>Större bonuserbjudanden</li>
+        </ul>
+      </div>
+      <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-label cat-label-4">
+        <span class="cat-icon">&#127760;</span>
+        <span class="cat-label-text">Malta<br>Casinon<br><strong>MGA</strong></span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-body-name">EU-casinon utan svensk licens</div>
+        <ul class="cat-checks">
+          <li>MGA och EMTA-licens</li>
+          <li>Ingen skatt på vinster</li>
+          <li>Licens inom EU</li>
+        </ul>
+      </div>
+      <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-label cat-label-5">
+        <span class="cat-icon">&#9917;</span>
+        <span class="cat-label-text">Sport<br>och Odds</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-body-name">Sport-casinon utan svensk licens</div>
+        <ul class="cat-checks">
+          <li>Sports betting bolag</li>
+          <li>Bästa odds</li>
+          <li>Sportsbetting-bonusar</li>
+        </ul>
+      </div>
+      <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
+    </div>
+  </div>
+
+  <!-- TOP 10 -->
+  <h2 class="section-h2" id="topplista">Våra 10 bästa casinon utan svensk licens i oktober 2024</h2>
+  <p class="art-p">
+    Genom åren har vårt expertteam recenserat hundratals casinon utan svensk licens.
+    Här presenterar vi vår <strong>topp-10-lista för oktober 2024</strong> – utvald genom
+    egna tester i kombination med vårt systematiska betygssystem.
+  </p>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Casino</th>
+          <th>Bonus</th>
+          <th>Omsättningskrav</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-rank">1.</td><td class="td-name">iWild Casino</td><td>200% upp till 1000 € + 100 Free Spins</td><td>35x (Bonus + Insättning), 40x (FS)</td></tr>
+        <tr><td class="td-rank">2.</td><td class="td-name">Snatch Casino</td><td>200% upp till 1000 € + 100 Free Spins</td><td>35x (Bonus + Insättning), 40x (FS)</td></tr>
+        <tr><td class="td-rank">3.</td><td class="td-name">Nifty Casino</td><td>200% + 2000 Free Spins</td><td>0x (Free Spins)</td></tr>
+        <tr><td class="td-rank">4.</td><td class="td-name">Unlimit Casino</td><td>200% + 1000 Free Spins</td><td>0x (Free Spins)</td></tr>
+        <tr><td class="td-rank">5.</td><td class="td-name">Casineia Casino</td><td>100% upp till 1000 €</td><td>1x (Bonus + Insättning)</td></tr>
+        <tr><td class="td-rank">6.</td><td class="td-name">Winsly Casino</td><td>200% + 2000 Free Spins</td><td>0x (Free Spins)</td></tr>
+        <tr><td class="td-rank">7.</td><td class="td-name">Punterz Casino</td><td>200% upp till 1000 €</td><td>30x (Bonus)</td></tr>
+        <tr><td class="td-rank">8.</td><td class="td-name">Red Dice Casino</td><td>200% upp till 1000 €</td><td>30x (Bonus)</td></tr>
+        <tr><td class="td-rank">9.</td><td class="td-name">Slot Owl Casino</td><td>100% upp till 500 €</td><td>25x (Bonus + Insättning)</td></tr>
+        <tr><td class="td-rank">10.</td><td class="td-name">Refuel Casino</td><td>100% + 250 Free Spins</td><td>0x (Free Spins)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <h2 class="section-h2" id="jamforelse">Jämförelse av de 10 bästa casinona utan svensk licens</h2>
+  <p class="art-p">Här presenterar vi en jämförelsetabell över de 10 bästa casinona utan svensk spellicens.</p>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Casino</th>
+          <th>Licens</th>
+          <th>Spelgenrer</th>
+          <th>Betalmetoder</th>
+          <th>Uttagsgräns</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1.</td><td class="td-name">iWild Casino</td><td>Curacao</td><td>15+</td><td>15+</td><td>1 200 €</td></tr>
+        <tr><td>2.</td><td class="td-name">Snatch Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>3 000 €</td></tr>
+        <tr><td>3.</td><td class="td-name">Nifty Casino</td><td>Malta</td><td>10+</td><td>10+</td><td>20 000 €</td></tr>
+        <tr><td>4.</td><td class="td-name">Unlimit Casino</td><td>Malta</td><td>10+</td><td>5+</td><td>10 000 €</td></tr>
+        <tr><td>5.</td><td class="td-name">Casineia Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>1 000 €</td></tr>
+        <tr><td>6.</td><td class="td-name">Winsly Casino</td><td>Estland</td><td>10+</td><td>5+</td><td>20 000 €</td></tr>
+        <tr><td>7.</td><td class="td-name">Punterz Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>10 000 €</td></tr>
+        <tr><td>8.</td><td class="td-name">Red Dice Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>40 000 €</td></tr>
+        <tr><td>9.</td><td class="td-name">Slot Owl Casino</td><td>Estland</td><td>10+</td><td>10+</td><td>20 000 €</td></tr>
+        <tr><td>10.</td><td class="td-name">Refuel Casino</td><td>Malta</td><td>10+</td><td>10+</td><td>10 000 €</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- QUICK FACTS -->
+  <div class="quick-facts" id="snabbfakta">
+    <h3>Snabbfakta om casino utan svensk licens</h3>
+    <ul class="qf-list">
+      <li><span class="qf-icon">i</span><div><strong>Lagligt att spela på:</strong> Casinon utan svensk licens är lagliga att spela på för svenskar.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Accepterar svenska spelare:</strong> Dessa casinon välkomnar svenska spelare och ger dig fler valmöjligheter för din spelupplevelse.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Säkra att spela på:</strong> Välj casinon med giltiga internationella licenser för en säker och rättvis spelmiljö.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Självavstängning:</strong> Trots avsaknad av Spelpaus kan alternativ för ansvarsfullt spelande erbjudas.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Skattefria vinster:</strong> Vinster från casinon med EU-licens är skattefria för svenska spelare.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Höga gränser:</strong> Högre insättnings- och uttagsgränser ger större frihet i ditt spelande.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Generösa bonusar:</strong> Casinon utan svensk licens erbjuder fantastiska bonusar och gör det lättare att optimera din spelbudget.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Begränsad support:</strong> De får inte erbjuda svensk support eller transaktioner i SEK. Svenska tjänster som BankID och Swish stöds inte.</div></li>
+    </ul>
+  </div>
+
+  <!-- WHAT IS -->
+  <h2 class="section-h2">Vad är ett casino utan svensk licens?</h2>
+
+  <p class="art-p">
+    <strong>Ett casino utan svensk licens är ett nätcasino som regleras av en annan myndighet än Spelinspektionen.</strong>
+  </p>
+
+  <p class="art-p">
+    Vanliga licensutfärdare är exempelvis Malta Gaming Authority eller Curaçao Gaming Control Board,
+    som sätter egna regler för säkerhet, bonusar och betalningar.
+  </p>
+
+  <p class="art-p">
+    I praktiken fungerar dessa casinon på nästan samma sätt som de svenska – du registrerar ett konto,
+    gör en insättning och börjar spela. Skillnaden ligger i regelverket, där utländska casinon ofta erbjuder
+    större frihet, som spel utan paus.
+  </p>
+
+  <p class="art-p">
+    Denna frihet märks bland annat i att bonusar och kampanjer kan vara mer generösa,
+    betalningsmetoderna fler (inklusive kryptovalutor), och att det inte finns samma insättnings-
+    eller tidsgränser som på svenska casinon. Däremot saknas system som Spelpaus, och vinster
+    kan bli skattepliktiga om casinot är licensierat utanför EU/EES. Att många spelare söker sig
+    hit beror på att Spellagen (2018:1138) införde strikta begränsningar i Sverige år 2019, vilket
+    fick flera operatörer att avstå från att ansöka om svensk licens.
+  </p>
+
+  <h3 class="section-h3">Är det lagligt att spela på casinon utan svensk licens?</h3>
+
+  <p class="art-p">
+    <strong>Ja, det är lagligt att spela på casinon utan svensk licens.</strong>
+    Så här formulerar sig Spelinspektionen:
+  </p>
+
+  <div class="art-quote">
+    "Det är inte olagligt att spela hos ett spelbolag eller delta i ett lotteri som saknar licens
+    i Sverige, men gör du det så omfattas du inte av de skydd som finns i spellagen, till exempel
+    möjligheten att kunna stänga av dig från spel."
+  </div>
+
+  <!-- PROS CONS -->
+  <div class="pros-cons-wrap" id="fordelar">
+    <h3>Fördelar och nackdelar med ett casino utan licens från Sverige</h3>
+    <p style="font-size:13.5px;color:var(--sub);margin-bottom:16px">
+      Att spela på ett casino utan svensk licens innebär flera fördelar, men det finns några
+      saker att ha i åtanke. Här är de viktigaste för- och nackdelarna från vårt expertteam:
+    </p>
+    <div class="pros-cols">
+      <div>
+        <div class="pros-col-title title-pros">&#128077; Fördelar</div>
+        <ul class="pros-list">
+          <li>Ingen Spelpaus: Spel utan Spelpaus</li>
+          <li>Stora bonusar: Optimerad spelbudget</li>
+          <li>Inga insättningsgränser: Högre insättningar för större vinster</li>
+          <li>Skattefria vinster: EU-casinon är skattefria</li>
+          <li>Snabbare spel: Ingen 3-sekundersregel</li>
+          <li>Högre RTP: Bättre vinstchans</li>
+          <li>Kryptovaluta: Snabba och anonyma transaktioner</li>
+        </ul>
+      </div>
+      <div>
+        <div class="pros-col-title title-cons">&#128078; Nackdelar</div>
+        <ul class="pros-list">
+          <li>Ej svenska kronor: Valutakonvertering</li>
+          <li>Engelskspråkig support: Språkbarriärer</li>
+          <li>Alternativ självuteslutning: Krångligare än Spelpaus</li>
+          <li>Skatter utanför EU/EES: Särskilda skatteregler kan gälla</li>
+          <li>Inga svenska tjänster: Erbjuder inte BankID, Zimpler eller Swish</li>
+          <li>Begränsat konsumentskydd: Ingen Spelinspektionens tillsyn</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- BONUSES -->
+  <h2 class="section-h2" id="bonusar">Bonusar på casino utan licens</h2>
+
+  <p class="art-p">
+    En av de största anledningarna till att svenska spelare väljer casinon utan licens är just
+    bonusarna. Svenska licensierade casinon är bundna av strikta regler som begränsar
+    välkomstbonusar och kräver att free spins värderas till maximalt 1 kr styck.
+    Sajter utanför det svenska regelverket har inga sådana begränsningar.
+  </p>
+
+  <p class="art-p">
+    Det betyder dock inte att alla bonusar är fördelaktiga. <strong>Omsättningskrav på 40x eller
+    högre</strong> gör i praktiken bonusen omöjlig att tillgodogöra sig. Titta alltid på tre saker:
+    omsättningskravet, tidsgränsen för att uppfylla kravet och vilka spel som bidrar till omsättningen.
+  </p>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr><th>Typ av bonus</th><th>Storlek</th><th>Omsättning</th><th>Giltighetstid</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-bold">Välkomstbonus</td><td>50–200%</td><td>25x–45x</td><td>14–30 dagar</td></tr>
+        <tr><td class="td-bold">Ingen insättningsbonus</td><td>50–200 kr / 20–100 FS</td><td>30x–60x</td><td>3–7 dagar</td></tr>
+        <tr><td class="td-bold">Cashback</td><td>5–20% av förluster</td><td>Inget krav</td><td>Veckovis</td></tr>
+        <tr><td class="td-bold">Reload</td><td>25–75%</td><td>20x–35x</td><td>7 dagar</td></tr>
+        <tr><td class="td-bold">Kryptovalutabonus</td><td>+25% extra</td><td>20x</td><td>7 dagar</td></tr>
+        <tr><td class="td-bold">VIP / Lojalitet</td><td>Individuellt</td><td>10x–20x</td><td>Obegränsat</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="notice warn">
+    <div class="notice-title">&#9888; Viktigt om bonusvillkor</div>
+    Spara alltid en skärmdump av bonusvillkoren när du aktiverar bonusen. Sajter utan licens
+    kan ändra villkoren utan förhandsavisering och du kan inte vända dig till Spelinspektionen vid tvist.
+  </div>
+
+  <!-- TAX -->
+  <h2 class="section-h2" id="skatt">Skatt på casinon utan svensk licens</h2>
+
+  <p class="art-p">
+    När du spelar på ett casino utan svensk spellicens är det viktigt att förstå hur skattereglerna
+    fungerar. <strong>Skattereglerna varierar beroende på om casinot är licensierat inom EU/EES
+    eller utanför dessa områden.</strong>
+  </p>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr><th>Licensgivare</th><th>EU / Internationell</th><th>Skattefri</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-bold">Malta Gaming Authority</td><td>EU</td><td class="td-yes">Ja</td></tr>
+        <tr><td class="td-bold">The Estonian Tax and Customs Board</td><td>EU</td><td class="td-yes">Ja</td></tr>
+        <tr><td class="td-bold">Curaçao Gaming Control Board</td><td>Internationell</td><td class="td-no">Nej</td></tr>
+        <tr><td class="td-bold">Kahnawake Gaming Commission</td><td>Internationell</td><td class="td-no">Nej</td></tr>
+        <tr><td class="td-bold">Government of Gibraltar</td><td>Internationell</td><td class="td-no">Nej</td></tr>
+        <tr><td class="td-bold">United Kingdom Gambling Commission</td><td>Internationell</td><td class="td-no">Nej</td></tr>
+        <tr><td class="td-bold">Isle of Man Gambling Supervision Commission</td><td>Internationell</td><td class="td-no">Nej</td></tr>
+        <tr><td class="td-bold">Alderney Gambling Control Commission</td><td>Internationell</td><td class="td-no">Nej</td></tr>
+        <tr><td class="td-bold">Anjouan Gaming Board</td><td>Internationell</td><td class="td-no">Nej</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="accordion">
+    <div class="acc-item open">
+      <div class="acc-head">
+        Skatt på casinon inom EU <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Vinster från casinon licensierade inom EU/EES (exempelvis Malta eller Estland) är normalt skattefria för svenska spelare. Du behöver alltså inte deklarera vinster från ett MGA-licensierat casino – detta är ett av de starkaste skälen till att många spelare föredrar EU-licensierade alternativ.</p>
+      </div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-head">
+        Skatt på casinon utanför EU <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Vinster från casinon licensierade utanför EU/EES, exempelvis Curaçao, är i regel skattepliktiga med 30 %. Du är skyldig att redovisa dessa i din inkomstdeklaration under posten "övrig inkomst". Kom ihåg att förluster inte är avdragsgilla mot övriga inkomster.</p>
+      </div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-head">
+        Hur betalar man skatt på vinster utanför EU? <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Du redovisar spelvinster under "övriga inkomster" i din inkomstdeklaration (INK1, bilaga T1). Skattesatsen är 30 %. Spara alltid transaktionshistorik och uttagskvitton som underlag för Skatteverket.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAYMENT -->
+  <h2 class="section-h2" id="betalning">Betalningsmetoder</h2>
+
+  <p class="art-p">
+    Eftersom sajterna saknar svensk licens kan svenska banker ibland blockera kortbetalningar.
+    <strong>Kryptovalutor</strong> är den metod som i praktiken alltid fungerar och ger dessutom
+    snabbast uttag – ofta inom 30 minuter. E-plånböcker som Skrill och Neteller fungerar på de
+    flesta sajter.
+  </p>
+
+  <div class="pay-wrap">
+    <span class="pay-chip">Bitcoin (BTC)</span>
+    <span class="pay-chip">Ethereum (ETH)</span>
+    <span class="pay-chip">Tether (USDT)</span>
+    <span class="pay-chip">Litecoin (LTC)</span>
+    <span class="pay-chip">Visa</span>
+    <span class="pay-chip">Mastercard</span>
+    <span class="pay-chip">Skrill</span>
+    <span class="pay-chip">Neteller</span>
+    <span class="pay-chip">MuchBetter</span>
+    <span class="pay-chip">Banköverföring</span>
+    <span class="pay-chip">XRP / Ripple</span>
+    <span class="pay-chip">BNB / BEP-20</span>
+  </div>
+
+  <!-- RATINGS -->
+  <h2 class="section-h2" id="betyg">Våra betygskriterier</h2>
+
+  <p class="art-p">
+    Våra casinorecensioner kombinerar praktisk testning med systematisk bedömning. Genom att
+    själva prova insättningar, uttag, spel och kundsupport kan vi ge en helhetsbild som är
+    både rättvis och pålitlig.
+  </p>
+
+  <div class="rating-rows">
+    <div class="rating-row">
+      <span class="r-label">Säkerhet och licens</span>
+      <div class="r-bar"><div class="r-fill" style="width:65%"></div></div>
+      <span class="r-val">6.5</span>
+    </div>
+    <div class="rating-row">
+      <span class="r-label">Bonusar</span>
+      <div class="r-bar"><div class="r-fill" style="width:89%"></div></div>
+      <span class="r-val">8.9</span>
+    </div>
+    <div class="rating-row">
+      <span class="r-label">Spelutbud</span>
+      <div class="r-bar"><div class="r-fill" style="width:91%"></div></div>
+      <span class="r-val">9.1</span>
+    </div>
+    <div class="rating-row">
+      <span class="r-label">Utbetalningar</span>
+      <div class="r-bar"><div class="r-fill" style="width:72%"></div></div>
+      <span class="r-val">7.2</span>
+    </div>
+    <div class="rating-row">
+      <span class="r-label">Mobilanpassning</span>
+      <div class="r-bar"><div class="r-fill" style="width:80%"></div></div>
+      <span class="r-val">8.0</span>
+    </div>
+    <div class="rating-row">
+      <span class="r-label">Kundsupport</span>
+      <div class="r-bar"><div class="r-fill" style="width:75%"></div></div>
+      <span class="r-val">7.5</span>
+    </div>
+  </div>
+
+  <!-- SPELPAUS -->
+  <h2 class="section-h2" id="spelpaus">Vad är ett casino utan Spelpaus?</h2>
+
+  <p class="art-p">
+    <strong>Ett casino utan Spelpaus är ett nätcasino som inte är anslutet till det svenska
+    avstängningssystemet Spelpaus.</strong> Begreppet är en vanlig synonym till casino utan
+    svensk licens.
+  </p>
+
+  <p class="art-p">
+    Casinon utan Spelpaus gör det möjligt för svenska spelare som blockerat sig från spel
+    i Sverige att ändå registrera sig och spela. Dessa casinon har licens i andra länder och
+    följer därför inte Spelinspektionens regler – inklusive den svenska omsorgsplikten.
+  </p>
+
+  <div class="notice green">
+    <div class="notice-title">&#9432; Observera</div>
+    Det fortfarande går att stänga av sig från spel även på ett casino utan Spelpaus. Det
+    kräver dock att du själv aktivt begär avstängning hos varje enskild plattform eller
+    använder en tredjepartstjänst för spelblockering.
+  </div>
+
+  <!-- TRUST -->
+  <div class="trust-section">
+    <h2 class="section-h2">Varför lita på oss och vår information?</h2>
+    <p class="art-p">
+      Vi grundade sajten år 2020 för att hjälpa spelare som vill ha alternativ till det
+      svenska licenssystemet. Med <strong>över 40 års kombinerad erfarenhet</strong> av
+      spelmarknaden har vårt expertteam byggt upp en unik kunskap som kombineras med en
+      systematisk process för att guida dig till trygga och attraktiva casinon utanför Sverige.
+    </p>
+    <h3 class="section-h3">Våra betygskriterier</h3>
+    <p class="art-p">
+      Våra kriterier omfattar licens och säkerhet, spelutbud, bonusar, betalningsmetoder,
+      kundsupport samt hur casinot arbetar med ansvarsfullt spelande. Genom att själva prova
+      insättningar, uttag och spel kan vi ge en helhetsbild som är både rättvis och pålitlig.
+    </p>
+  </div>
+
+  <!-- FAQ -->
+  <h2 class="section-h2" id="faq">Vanliga frågor om casino utan svensk licens</h2>
+
+  <div class="accordion">
+    <div class="acc-item open">
+      <div class="acc-head">
+        Är det olagligt att spela på casino utan licens i Sverige? <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Nej, det är inte olagligt för en privatperson. Det är operatören som bryter mot spellagen om de riktar marknadsföring mot svenska spelare utan tillstånd. Du som spelare riskerar inga rättsliga påföljder men förlorar det konsumentskydd som den svenska licensen ger.</p>
+      </div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-head">
+        Hur snabbt kan jag ta ut pengar från ett casino utan licens? <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Med kryptovaluta tar det vanligtvis 30 minuter till 4 timmar. E-plånböcker som Skrill och Neteller tar 1–24 timmar. Bankkort och banköverföringar kan ta 1–5 bankdagar och kan dessutom blockeras av din svenska bank.</p>
+      </div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-head">
+        Är casinon utan svensk licens skattefria? <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Vinster från casinon inom EU/EES är normalt skattefria. Vinster från casinon utanför EU/EES är skattepliktiga med 30 % och ska redovisas i din deklaration under "övriga inkomster".</p>
+      </div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-head">
+        Vad gör jag om sajten vägrar betala ut? <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Kontakta supporten med dokumentation. Om det inte hjälper, lämna in ett klagomål via Casino Guru eller AskGamblers. Du kan även initiera en chargeback via din bank om du betalat med kort.</p>
+      </div>
+    </div>
+    <div class="acc-item">
+      <div class="acc-head">
+        Fungerar Spelpaus på sajter utan licens? <span class="acc-arrow">&#9660;</span>
+      </div>
+      <div class="acc-body">
+        <p>Nej. Spelpaus gäller endast svenska licensierade casinon. Om du väljer att spela utan licens är du ensam ansvarig för att hålla kontroll på ditt spelande.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RESPONSIBLE -->
+  <h2 class="section-h2" id="ansvar">Ansvarsfullt spelande</h2>
+
+  <p class="art-p">
+    Att spela på ett onlinecasino utan Spelpaus innebär att du själv behöver ta ett större ansvar.
+    Det är viktigt att känna till vilka hjälpverktyg som finns tillgängliga och hur du kan spela
+    ansvarsfullt även utan de svenska skyddsmekanismerna.
+  </p>
+
+  <div class="notice">
+    <div class="notice-title">&#128222; Behöver du hjälp?</div>
+    Kontakta Stödlinjen på <strong>020-819 100</strong> (kostnadsfritt, dygnet runt) eller besök
+    <strong>stodlinjen.se</strong> för stöd vid spelproblem. Hjälpen är anonym och kostnadsfri.
+  </div>
+
+</div>
+<!-- end page-container -->
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+
+  <div class="footer-logo-only">
+    <a href="/" class="footer-logo-link">
+      <div class="footer-emblem">♠</div>
+      <div>
+        <div class="footer-logo-txt">Casino<span style="color:var(--blue)">Guiden</span>
+          <span>utan svensk licens</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.acc-head').forEach(function(head) {
+    head.addEventListener('click', function() {
+      this.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
