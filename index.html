@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casino utan Svensk Licens 2024 – Spela utan Spelpaus | CasinoGuiden</title>
+  <title>Casino utan Svensk Licens 2026 – Spela utan Spelpaus | CasinoGuiden</title>
   <style>
     /* ─── Palette ───────────────────────────────────────────
        Navy   #000B26
-       Blue   #7CA7EB
+       Blue   #52AAFF
        Choc   #402924
        Camel  #CBE290
     ─────────────────────────────────────────────────────── */
@@ -16,7 +16,7 @@
 
     :root {
       --navy:    #000B26;
-      --blue:    #7CA7EB;
+      --blue:    #52AAFF;
       --choc:    #402924;
       --camel:   #CBE290;
       --page-bg: #F0EFF6;
@@ -51,77 +51,52 @@
     .header-inner {
       max-width: 920px;
       margin: 0 auto;
-      padding: 18px 20px;
+      padding: 8px 20px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
+      align-items: center;
     }
 
     /* ─── LOGO ───────────────────────────────────────────── */
     .logo {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 18px;
       text-decoration: none;
     }
 
-    .logo:hover { text-decoration: none; }
+    .logo:hover { text-decoration: none; opacity: .88; }
 
-    .logo-emblem {
-      width: 52px;
-      height: 52px;
-      background: var(--blue);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+    .logo-icon {
       flex-shrink: 0;
-    }
-
-    .logo-emblem::before {
-      content: '♠';
-      font-size: 28px;
-      color: var(--navy);
-      line-height: 1;
-    }
-
-    .logo-emblem-badge {
-      position: absolute;
-      bottom: -6px;
-      right: -6px;
-      width: 20px;
-      height: 20px;
-      background: var(--camel);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 10px;
-      font-weight: 900;
-      color: var(--navy);
+      height: 64px;
+      width: auto;
+      display: block;
     }
 
     .logo-text-wrap {
       display: flex;
       flex-direction: column;
-      gap: 1px;
+      gap: 0;
+      line-height: 1;
     }
 
     .logo-main {
-      font-size: 20px;
+      font-size: 26px;
       font-weight: 900;
-      color: var(--white);
-      letter-spacing: 1px;
-      line-height: 1;
+      color: var(--blue);
+      letter-spacing: 1.5px;
       text-transform: uppercase;
+      line-height: 1.1;
     }
 
-    .logo-main span { color: var(--blue); }
-
-    .logo-sub {
-      font-size: 10px;
-      font-weight: 400;
-      color: var(--muted);
-      letter-spacing: 2.5px;
+    .logo-sub-line {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--blue);
+      letter-spacing: 1.5px;
       text-transform: uppercase;
+      line-height: 1.1;
     }
 
     /* ─── PAGE CONTAINER ─────────────────────────────────── */
@@ -136,17 +111,17 @@
       background: var(--white);
       border: 1px solid var(--border);
       border-left: 4px solid var(--blue);
-      padding: 22px 24px;
+      padding: 8px 24px;
       display: grid;
-      grid-template-columns: 70px 1fr;
-      gap: 18px;
+      grid-template-columns: 80px 1fr;
+      gap: 14px;
       align-items: center;
       margin-bottom: 28px;
     }
 
     .author-photo {
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 80px;
       background: var(--tint);
       border: 2px solid var(--border);
       display: flex;
@@ -297,7 +272,7 @@
 
     .cat-card {
       display: grid;
-      grid-template-columns: 155px 1fr auto;
+      grid-template-columns: 155px 1fr 210px auto;
       border: 1px solid var(--border);
       margin-bottom: 10px;
       background: var(--white);
@@ -323,6 +298,7 @@
     .cat-label-3 { background: #E5F7EC; }
     .cat-label-4 { background: #FDE8E8; }
     .cat-label-5 { background: #EDE8FF; }
+    .cat-label-6 { background: #E0F7F4; }
 
     .cat-label-text { font-size: 12px; font-weight: 900; color: var(--navy); line-height: 1.3; }
     .cat-icon { font-size: 26px; }
@@ -332,12 +308,18 @@
       padding: 18px 22px;
       display: flex;
       align-items: center;
-      gap: 28px;
     }
 
-    .cat-body-name { font-size: 13.5px; font-weight: 900; color: var(--white); min-width: 150px; line-height: 1.3; }
+    .cat-body-name { font-size: 13.5px; font-weight: 900; color: var(--white); line-height: 1.3; }
 
-    .cat-checks { list-style: none; flex: 1; }
+    .cat-checks {
+      list-style: none;
+      background: var(--navy);
+      padding: 18px 0 18px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
     .cat-checks li {
       font-size: 12.5px;
@@ -576,6 +558,82 @@
       color: var(--text);
     }
 
+    /* ─── ARTICLE IMAGE ROW ─────────────────────────────── */
+    .art-with-img {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 22px;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .art-with-img.img-right {
+      grid-template-columns: 1fr 180px;
+    }
+
+    .art-with-img.img-right .art-img { order: 2; }
+    .art-with-img.img-right .art-p   { order: 1; }
+
+    .art-img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      background: var(--navy);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 11px;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .art-img-icon { font-size: 28px; color: var(--blue); opacity: 0.5; }
+
+    @media (max-width: 600px) {
+      .art-with-img,
+      .art-with-img.img-right { grid-template-columns: 1fr; }
+      .art-with-img.img-right .art-img,
+      .art-with-img.img-right .art-p { order: unset; }
+      .art-img { aspect-ratio: 16 / 6; }
+    }
+
+    /* ─── INLINE BANNER ─────────────────────────────────── */
+    .hero-banner {
+      width: 100%;
+      height: 180px;
+      background: var(--navy);
+      margin: 40px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 40px,
+        rgba(124,167,235,.04) 40px,
+        rgba(124,167,235,.04) 80px
+      );
+    }
+
+    .hero-banner .hero-image-suits       { font-size: 64px; }
+    .hero-banner .hero-image-suits-right { font-size: 64px; }
+    .hero-banner .hero-image-inner       { z-index: 2; position: relative; text-align: center; }
+    .hero-banner .hero-image-title       { font-size: clamp(1.1rem, 3vw, 1.7rem); font-weight: 900; color: var(--white); line-height: 1.2; margin-bottom: 8px; }
+    .hero-banner .hero-image-title em    { font-style: normal; color: var(--blue); }
+    .hero-banner .hero-image-sub         { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+    .hero-banner .btn-cta                { display: inline-block; }
+
     /* ─── TRUST SECTION ──────────────────────────────────── */
     .trust-section {
       background: var(--tint);
@@ -633,6 +691,97 @@
 
     .footer-logo-txt { font-size: 15px; font-weight: 900; color: var(--white); line-height: 1.2; }
     .footer-logo-txt span { display: block; font-size: 10px; font-weight: 400; color: var(--muted); letter-spacing: 2px; text-transform: uppercase; }
+
+    /* ─── MOBILE: TABLET (≤768px) ────────────────────────── */
+    @media (max-width: 768px) {
+      .page-container { padding: 24px 16px 48px; }
+
+      .hero-image { height: 200px; }
+      .hero-image-suits,
+      .hero-image-suits-right { font-size: 56px; }
+
+      .author-block { grid-template-columns: 80px 1fr; gap: 14px; }
+      .author-photo  { width: 80px; height: 80px; }
+
+      .cat-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+      .cat-card { display: flex; flex-direction: column; margin-bottom: 0; }
+      .cat-label { padding: 16px 12px; min-height: 80px; }
+      .cat-body { flex: 1; flex-direction: column; align-items: flex-start; padding: 14px 14px; gap: 8px; }
+      .cat-body-name { font-size: 12.5px; min-width: unset; width: 100%; color: var(--blue); }
+      .cat-checks { width: 100%; }
+      .cat-cta-wrap { display: flex; padding: 10px 12px; justify-content: center; }
+      .btn-cta { width: 100%; text-align: center; padding: 11px 8px; font-size: 13px; }
+
+      .pros-cols { grid-template-columns: 1fr; gap: 16px; }
+
+      .t-wrap table { font-size: 12.5px; }
+      table thead th { padding: 9px 11px; font-size: 11px; }
+      table tbody td { padding: 9px 11px; }
+
+      .trust-section { padding: 22px 20px; }
+    }
+
+    /* ─── MOBILE: PHONE (≤480px) ─────────────────────────── */
+    @media (max-width: 480px) {
+      .header-inner { padding: 6px 14px; }
+      .logo-icon { height: 48px; }
+
+      .page-container { padding: 16px 12px 36px; }
+
+      .hero-image { height: 150px; }
+      .hero-image-suits,
+      .hero-image-suits-right { display: none; }
+      .hero-image-title { font-size: 1.35rem; margin-bottom: 6px; }
+      .hero-image-sub { font-size: 12px; }
+
+      .author-block { grid-template-columns: 64px 1fr; gap: 12px; padding: 8px 14px; }
+      .author-photo  { width: 64px; height: 64px; }
+      .author-info-name { font-size: 14px; }
+      .author-info-desc { font-size: 12px; }
+      .author-info-meta { flex-direction: column; gap: 3px; }
+
+      .page-title { font-size: 1.35rem; }
+      .section-h2  { font-size: 1.1rem; margin: 28px 0 10px; }
+      .section-h3  { font-size: 1rem; margin: 20px 0 8px; }
+      .art-p       { font-size: 14px; }
+
+      .cat-cards { margin: 16px 0 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+      .cat-card { display: flex; flex-direction: column; border: 1px solid var(--border); margin-bottom: 0; }
+      .cat-label { padding: 16px 10px; min-height: 80px; }
+      .cat-icon { font-size: 22px; }
+      .cat-label-text { font-size: 11px; }
+      .cat-body { flex: 1; flex-direction: column; align-items: flex-start; padding: 12px 10px; gap: 6px; }
+      .cat-body-name { font-size: 12px; min-width: unset; width: 100%; color: var(--blue); }
+      .cat-checks { width: 100%; }
+      .cat-checks li { font-size: 11px; }
+      .cat-cta-wrap { display: flex; padding: 10px; justify-content: center; }
+      .btn-cta { width: 100%; text-align: center; padding: 10px 6px; font-size: 12.5px; }
+
+      .quick-facts { padding: 16px 14px; }
+      .qf-list li { font-size: 12.5px; }
+
+      .pros-cons-wrap { padding: 16px 14px; }
+      .pros-cols { grid-template-columns: 1fr; }
+      .pros-list li { font-size: 12.5px; }
+
+      .t-wrap { font-size: 12px; }
+      table thead th { padding: 8px 9px; font-size: 10px; white-space: normal; }
+      table tbody td { padding: 8px 9px; font-size: 12px; }
+
+      .art-quote { padding: 12px 14px; font-size: 13px; }
+
+      .notice { padding: 11px 14px; font-size: 13px; }
+
+      .pay-wrap { gap: 6px; margin: 10px 0; }
+      .pay-chip { font-size: 12px; padding: 5px 10px; }
+
+      .trust-section { padding: 18px 14px; margin: 24px 0; }
+
+      .acc-head { padding: 12px 14px; font-size: 13px; }
+      .acc-body { padding: 0 14px 12px; font-size: 13px; }
+
+      .footer-logo-only { padding: 20px 16px; }
+    }
   </style>
 </head>
 <body>
@@ -643,13 +792,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="logo">
-      <div class="logo-emblem">
-        <span class="logo-emblem-badge">★</span>
-      </div>
-      <div class="logo-text-wrap">
-        <div class="logo-main">Casino<span>Guiden</span></div>
-        <div class="logo-sub">utan svensk licens</div>
-      </div>
+      <img class="logo-icon" src="logo-casino.png" alt="Casino Utan Licens Logo"/>
     </a>
   </div>
 </header>
@@ -661,17 +804,15 @@
 
   <!-- AUTHOR BLOCK -->
   <div class="author-block">
-    <div class="author-photo">&#128100;</div>
+    <div class="author-photo"><img src="expert.png" alt="James Hartley" style="width:100%;height:100%;object-fit:cover;"/></div>
     <div>
-      <div class="author-info-name">Anders Lindgren</div>
+      <div class="author-info-name">James Hartley</div>
       <div class="author-info-role">Casinoexpert &amp; chefredaktör</div>
       <div class="author-info-desc">
-        Anders har arbetat med spelrecensioner sedan 2015 och har personligen testat
-        över 300 casinon. Specialiserad på licensjuridik och bonusanalys.
+        James Hartley är en brittisk casinoanalytiker och senior redaktör med fokus på recensioner av onlinecasinon, bonusvillkor, betalningar och ansvarsfullt spelande.
       </div>
       <div class="author-info-meta">
-        <span>&#128197; Publicerad: 14 oktober 2024</span>
-        <span>&#9998; Faktagranskad av: Henrik Strand</span>
+        <span>&#128197; Publicerad: 14 oktober 2026</span>
         <span>&#128337; Lästid: ca 8 min</span>
       </div>
     </div>
@@ -679,38 +820,21 @@
 
   <!-- HERO IMAGE -->
   <div class="hero-image">
-    <span class="hero-image-suits">♠♣</span>
+    <div class="hero-image-suits">&#9827; &#9824;</div>
+    <div class="hero-image-suits-right">&#9830; &#9829;</div>
     <div class="hero-image-inner">
-      <div class="hero-image-title">Casino utan <em>Svensk Licens</em> 2024</div>
-      <div class="hero-image-sub">Spela utan Spelpaus – Oberoende guide &amp; topplista</div>
+      <div class="hero-image-title">Casino utan <em>Svensk Licens</em> 2026</div>
+      <div class="hero-image-sub">Spela utan Spelpaus &#8211; Oberoende guide &amp; topplista</div>
     </div>
-    <span class="hero-image-suits-right">♥♦</span>
   </div>
 
-  <!-- PAGE TITLE -->
-  <h1 class="page-title">Casino utan Svensk Licens 2024 – Spela casino utan Spelpaus</h1>
+  <h1 class="page-title">Casino utan svensk licens</h1>
 
-  <p class="art-p">
-    Ett <strong>casino utan svensk licens</strong> är detsamma som ett casino utan Spelpaus,
-    då dessa inte är licensierade av den svenska spelmyndigheten Spelinspektionen.
-  </p>
+  <p class="art-p">Den svenska spelmarknaden är fortfarande en av de mest reglerade i Europa, därför ser många spelare internationella plattformar som ett alternativ till lokala operatörer. På den här sidan har vi samlat de bästa casinona utan svensk licens som är tillgängliga för spelare från Sverige. Här hittar du en aktuell ranking, jämförelse av villkor, information om licenser, bonusar, betalningsmetoder, beskattning av vinster, hur Spelpaus fungerar och de viktigaste riskerna när du väljer en internationell operatör.</p>
 
-  <p class="art-p">
-    Casinon utan svensk licens har ökat kraftigt i popularitet i Sverige. De kan erbjuda
-    <strong>bättre bonusar</strong>, större spelvariation samt högre insättnings- och
-    uttagsgränser än svenska licensierade casinon – utan den tresekundersregel och de
-    strikta omsättningskrav som följer med det svenska regelverket.
-  </p>
-
-  <p class="art-p">
-    Våra casinoexperter har granskat <strong>över 250 casinossajter</strong> och allt som rör
-    onlinecasinon utan svensk licens. Från för- och nackdelar till registrering, licensgivare
-    och hur man börjar spela. Och självklart har vi listat de bästa casinona utan svensk licens.
-  </p>
+  <p class="art-p">Många spelare väljer casino utan svensk licens på grund av mer förmånliga villkor jämfört med lokala operatörer. I vår ranking finns endast granskade casinon utan svensk licens som kännetecknas av pålitliga licenser, snabba utbetalningar, tydliga villkor och hög kvalitet på kundservicen.</p>
 
   <!-- CATEGORY CARDS -->
-  <h2 class="section-h2">Rekommenderade typer av casino utan svensk licens</h2>
-  <p class="art-p">Klicka på listan för att hitta <strong>bästa casino utan svensk licens</strong> och Spelpaus i varje kategori.</p>
 
   <div class="cat-cards">
     <div class="cat-card">
@@ -720,279 +844,293 @@
       </div>
       <div class="cat-body">
         <div class="cat-body-name">Bästa casinon utan svensk licens</div>
-        <ul class="cat-checks">
-          <li>Bäst betygsatt</li>
-          <li>Många betalningsalternativ</li>
-          <li>Rättvisa spel</li>
-        </ul>
       </div>
+      <ul class="cat-checks">
+        <li>Bäst betygsatt</li>
+        <li>Pålitliga licenser</li>
+        <li>Snabba utbetalningar</li>
+      </ul>
       <div class="cat-cta-wrap"><a href="#topplista" class="btn-cta">Besök här</a></div>
     </div>
 
     <div class="cat-card">
-      <div class="cat-label cat-label-2">
-        <span class="cat-icon">&#9889;</span>
-        <span class="cat-label-text">Snabba<br>uttag</span>
+      <div class="cat-label cat-label-4">
+        <span class="cat-icon">&#128683;</span>
+        <span class="cat-label-text">Casino<br>utan<br>SpelPaus</span>
       </div>
       <div class="cat-body">
-        <div class="cat-body-name">Casinon utan licens med snabba uttag</div>
-        <ul class="cat-checks">
-          <li>Snabba uttag</li>
-          <li>Kryptovalutor accepteras</li>
-          <li>Ingen fördröjning</li>
-        </ul>
+        <div class="cat-body-name">Casino utan SpelPaus</div>
       </div>
+      <ul class="cat-checks">
+        <li>Ej anslutet till Spelpaus</li>
+        <li>Internationell licens</li>
+        <li>Egna spelgränser</li>
+      </ul>
       <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
     </div>
 
     <div class="cat-card">
       <div class="cat-label cat-label-3">
-        <span class="cat-icon">&#128181;</span>
-        <span class="cat-label-text">Skattefria<br>casinon</span>
+        <span class="cat-icon">&#127381;</span>
+        <span class="cat-label-text">Nya<br>Casinon</span>
       </div>
       <div class="cat-body">
-        <div class="cat-body-name">Skattefria casinon utan svensk licens</div>
-        <ul class="cat-checks">
-          <li>Bästa skattefria casinon</li>
-          <li>Olika typer av bonusar</li>
-          <li>Större bonuserbjudanden</li>
-        </ul>
+        <div class="cat-body-name">Nya casino utan svensk licens</div>
       </div>
-      <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
-    </div>
-
-    <div class="cat-card">
-      <div class="cat-label cat-label-4">
-        <span class="cat-icon">&#127760;</span>
-        <span class="cat-label-text">Malta<br>Casinon<br><strong>MGA</strong></span>
-      </div>
-      <div class="cat-body">
-        <div class="cat-body-name">EU-casinon utan svensk licens</div>
-        <ul class="cat-checks">
-          <li>MGA och EMTA-licens</li>
-          <li>Ingen skatt på vinster</li>
-          <li>Licens inom EU</li>
-        </ul>
-      </div>
+      <ul class="cat-checks">
+        <li>Lanserade 2025–2026</li>
+        <li>Moderna spelplattformar</li>
+        <li>Stora välkomstbonusar</li>
+      </ul>
       <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
     </div>
 
     <div class="cat-card">
       <div class="cat-label cat-label-5">
         <span class="cat-icon">&#9917;</span>
-        <span class="cat-label-text">Sport<br>och Odds</span>
+        <span class="cat-label-text">Betting<br>utan<br>licens</span>
       </div>
       <div class="cat-body">
-        <div class="cat-body-name">Sport-casinon utan svensk licens</div>
-        <ul class="cat-checks">
-          <li>Sports betting bolag</li>
-          <li>Bästa odds</li>
-          <li>Sportsbetting-bonusar</li>
-        </ul>
+        <div class="cat-body-name">Betting utan svensk licens</div>
       </div>
+      <ul class="cat-checks">
+        <li>Bästa odds</li>
+        <li>Live betting</li>
+        <li>Sportsbonusar</li>
+      </ul>
+      <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-label cat-label-2">
+        <span class="cat-icon">&#128241;</span>
+        <span class="cat-label-text">Mobil<br>casinon</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-body-name">Mobilcasinon utan svensk licens</div>
+      </div>
+      <ul class="cat-checks">
+        <li>Optimerade för mobil</li>
+        <li>App eller mobilsajt</li>
+        <li>Snabb inloggning</li>
+      </ul>
+      <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
+    </div>
+
+    <div class="cat-card">
+      <div class="cat-label cat-label-6">
+        <span class="cat-icon">&#9889;</span>
+        <span class="cat-label-text">Snabba<br>uttag</span>
+      </div>
+      <div class="cat-body">
+        <div class="cat-body-name">Casinon med snabba uttag</div>
+      </div>
+      <ul class="cat-checks">
+        <li>Uttag inom 30 minuter</li>
+        <li>Krypto och e-wallets</li>
+        <li>Ingen fördröjning</li>
+      </ul>
       <div class="cat-cta-wrap"><a href="#" class="btn-cta">Besök här</a></div>
     </div>
   </div>
 
-  <!-- TOP 10 -->
-  <h2 class="section-h2" id="topplista">Våra 10 bästa casinon utan svensk licens i oktober 2024</h2>
-  <p class="art-p">
-    Genom åren har vårt expertteam recenserat hundratals casinon utan svensk licens.
-    Här presenterar vi vår <strong>topp-10-lista för oktober 2024</strong> – utvald genom
-    egna tester i kombination med vårt systematiska betygssystem.
-  </p>
+
+  <h2 class="section-h2" id="topplista">Topp 5 casino utan svensk licens</h2>
+
+  <p class="art-p">När vi sammanställde rankingen tog vi hänsyn till bonusstorlek, omsättningskrav, licensens tillförlitlighet, utbetalningshastighet, tillgänglighet för spelare från Sverige och den totala nyttan av villkoren jämfört med många svensklicensierade casinon.</p>
 
   <div class="t-wrap">
     <table>
       <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Casino</th>
-          <th>Bonus</th>
-          <th>Omsättningskrav</th>
-        </tr>
+        <tr><th>Rank</th><th>Casino</th><th>Bonus</th><th>Omsättningskrav</th></tr>
       </thead>
       <tbody>
-        <tr><td class="td-rank">1.</td><td class="td-name">iWild Casino</td><td>200% upp till 1000 € + 100 Free Spins</td><td>35x (Bonus + Insättning), 40x (FS)</td></tr>
-        <tr><td class="td-rank">2.</td><td class="td-name">Snatch Casino</td><td>200% upp till 1000 € + 100 Free Spins</td><td>35x (Bonus + Insättning), 40x (FS)</td></tr>
-        <tr><td class="td-rank">3.</td><td class="td-name">Nifty Casino</td><td>200% + 2000 Free Spins</td><td>0x (Free Spins)</td></tr>
-        <tr><td class="td-rank">4.</td><td class="td-name">Unlimit Casino</td><td>200% + 1000 Free Spins</td><td>0x (Free Spins)</td></tr>
-        <tr><td class="td-rank">5.</td><td class="td-name">Casineia Casino</td><td>100% upp till 1000 €</td><td>1x (Bonus + Insättning)</td></tr>
-        <tr><td class="td-rank">6.</td><td class="td-name">Winsly Casino</td><td>200% + 2000 Free Spins</td><td>0x (Free Spins)</td></tr>
-        <tr><td class="td-rank">7.</td><td class="td-name">Punterz Casino</td><td>200% upp till 1000 €</td><td>30x (Bonus)</td></tr>
-        <tr><td class="td-rank">8.</td><td class="td-name">Red Dice Casino</td><td>200% upp till 1000 €</td><td>30x (Bonus)</td></tr>
-        <tr><td class="td-rank">9.</td><td class="td-name">Slot Owl Casino</td><td>100% upp till 500 €</td><td>25x (Bonus + Insättning)</td></tr>
-        <tr><td class="td-rank">10.</td><td class="td-name">Refuel Casino</td><td>100% + 250 Free Spins</td><td>0x (Free Spins)</td></tr>
+        <tr><td class="td-rank">1</td><td class="td-name">Arctic Casino</td><td>Upp till €5 000 + free spins</td><td>35x</td></tr>
+        <tr><td class="td-rank">2</td><td class="td-name">Rich Moose Casino</td><td>Upp till €1 100 + 700 Free Spins</td><td>40x insättning + bonus</td></tr>
+        <tr><td class="td-rank">3</td><td class="td-name">LeoVegas</td><td>Bonusar beror på marknad och kampanj</td><td>Kraven anges i det specifika erbjudandet</td></tr>
+        <tr><td class="td-rank">4</td><td class="td-name">Casino Joy</td><td>Upp till €1 000 + free spins</td><td>35x</td></tr>
+        <tr><td class="td-rank">5</td><td class="td-name">Gambiva</td><td>Upp till €7 777 i välkomstpaket</td><td>25x</td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- COMPARISON TABLE -->
-  <h2 class="section-h2" id="jamforelse">Jämförelse av de 10 bästa casinona utan svensk licens</h2>
-  <p class="art-p">Här presenterar vi en jämförelsetabell över de 10 bästa casinona utan svensk spellicens.</p>
+  <p class="art-p">Dessutom erbjuder de flesta casinon i rankingen regelbundna kampanjer, cashback och VIP-program, medan många operatörer med svensk licens begränsas av striktare regler för bonusar och lojalitetsprogram.</p>
+
+  <h2 class="section-h2">Jämförelse av de bästa casinona utan svensk licens</h2>
+
+  <p class="art-p">Före registrering är det praktiskt att jämföra casinonas viktigaste parametrar på ett och samma ställe. För spelare från Sverige är licens, tillgängliga spelkategorier, metoder för insättning och uttag samt uttagsgränser särskilt viktiga, eftersom just dessa faktorer oftast skiljer internationella casinon från operatörer med svensk licens.</p>
 
   <div class="t-wrap">
     <table>
       <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Casino</th>
-          <th>Licens</th>
-          <th>Spelgenrer</th>
-          <th>Betalmetoder</th>
-          <th>Uttagsgräns</th>
-        </tr>
+        <tr><th>Rank</th><th>Casino</th><th>Licens</th><th>Spelgenrer</th><th>Betalmetoder</th><th>Uttagsgräns</th></tr>
       </thead>
       <tbody>
-        <tr><td>1.</td><td class="td-name">iWild Casino</td><td>Curacao</td><td>15+</td><td>15+</td><td>1 200 €</td></tr>
-        <tr><td>2.</td><td class="td-name">Snatch Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>3 000 €</td></tr>
-        <tr><td>3.</td><td class="td-name">Nifty Casino</td><td>Malta</td><td>10+</td><td>10+</td><td>20 000 €</td></tr>
-        <tr><td>4.</td><td class="td-name">Unlimit Casino</td><td>Malta</td><td>10+</td><td>5+</td><td>10 000 €</td></tr>
-        <tr><td>5.</td><td class="td-name">Casineia Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>1 000 €</td></tr>
-        <tr><td>6.</td><td class="td-name">Winsly Casino</td><td>Estland</td><td>10+</td><td>5+</td><td>20 000 €</td></tr>
-        <tr><td>7.</td><td class="td-name">Punterz Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>10 000 €</td></tr>
-        <tr><td>8.</td><td class="td-name">Red Dice Casino</td><td>Curacao</td><td>10+</td><td>15+</td><td>40 000 €</td></tr>
-        <tr><td>9.</td><td class="td-name">Slot Owl Casino</td><td>Estland</td><td>10+</td><td>10+</td><td>20 000 €</td></tr>
-        <tr><td>10.</td><td class="td-name">Refuel Casino</td><td>Malta</td><td>10+</td><td>10+</td><td>10 000 €</td></tr>
+        <tr><td class="td-rank">1</td><td class="td-name">Arctic Casino</td><td>Curacao</td><td>Slots, live casino, bordsspel, jackpottar</td><td>Visa, Mastercard, Skrill, Neteller, kryptovalutor</td><td>Upp till €20 000 per månad</td></tr>
+        <tr><td class="td-rank">2</td><td class="td-name">Rich Moose Casino</td><td>Malta (MGA)</td><td>Slots, live casino, roulette, blackjack, jackpottar</td><td>Visa, Mastercard, Skrill, Neteller, Trustly</td><td>Upp till €10 000 per vecka</td></tr>
+        <tr><td class="td-rank">3</td><td class="td-name">LeoVegas</td><td>Malta (MGA)</td><td>Över 3 000 spel, slots, live casino, bordsspel, sportspel</td><td>Visa, Mastercard, Trustly, Apple Pay, PayPal</td><td>Individuellt beroende på kontonivå</td></tr>
+        <tr><td class="td-rank">4</td><td class="td-name">Casino Joy</td><td>Curacao</td><td>Slots, live dealers, roulette, blackjack, videopoker</td><td>Visa, Mastercard, kryptovalutor, e-plånböcker</td><td>Upp till €10 000 per månad</td></tr>
+        <tr><td class="td-rank">5</td><td class="td-name">Gambiva</td><td>Curacao</td><td>Över 6 000 spel, slots, live casino, crash games, jackpottar</td><td>Bankkort, kryptovalutor, e-plånböcker</td><td>Upp till €50 000 per månad</td></tr>
       </tbody>
     </table>
   </div>
 
-  <!-- QUICK FACTS -->
-  <div class="quick-facts" id="snabbfakta">
-    <h3>Snabbfakta om casino utan svensk licens</h3>
+  <p class="art-p">Spelare som vill ha största möjliga spelutbud bör särskilt titta på Gambiva och LeoVegas. För höga uttagsgränser passar Gambiva och Arctic Casino bättre, medan spelare som söker MGA-licensiering och extra regulatoriskt skydd vanligtvis intresserar sig för Rich Moose Casino och LeoVegas. Sett till storleken på välkomstpaketet erbjuder Gambiva och Arctic Casino de mest förmånliga villkoren.</p>
+
+  <div class="quick-facts">
+    <h3>Korta fakta om casino utan svensk licens</h3>
     <ul class="qf-list">
-      <li><span class="qf-icon">i</span><div><strong>Lagligt att spela på:</strong> Casinon utan svensk licens är lagliga att spela på för svenskar.</div></li>
-      <li><span class="qf-icon">i</span><div><strong>Accepterar svenska spelare:</strong> Dessa casinon välkomnar svenska spelare och ger dig fler valmöjligheter för din spelupplevelse.</div></li>
-      <li><span class="qf-icon">i</span><div><strong>Säkra att spela på:</strong> Välj casinon med giltiga internationella licenser för en säker och rättvis spelmiljö.</div></li>
-      <li><span class="qf-icon">i</span><div><strong>Självavstängning:</strong> Trots avsaknad av Spelpaus kan alternativ för ansvarsfullt spelande erbjudas.</div></li>
-      <li><span class="qf-icon">i</span><div><strong>Skattefria vinster:</strong> Vinster från casinon med EU-licens är skattefria för svenska spelare.</div></li>
-      <li><span class="qf-icon">i</span><div><strong>Höga gränser:</strong> Högre insättnings- och uttagsgränser ger större frihet i ditt spelande.</div></li>
-      <li><span class="qf-icon">i</span><div><strong>Generösa bonusar:</strong> Casinon utan svensk licens erbjuder fantastiska bonusar och gör det lättare att optimera din spelbudget.</div></li>
-      <li><span class="qf-icon">i</span><div><strong>Begränsad support:</strong> De får inte erbjuda svensk support eller transaktioner i SEK. Svenska tjänster som BankID och Swish stöds inte.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Legalitet</strong> – spelare från Sverige kan spela på internationella casinon.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Licenser</strong> – oftast används MGA-licens (Malta) och Curacao.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Spelpaus</strong> – gäller inte på casinon utan svensk licens.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Bonusar</strong> – välkomstbonusar, cashback, free spins och VIP-program finns tillgängliga.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Bonusbegränsningar</strong> – det finns ingen regel om endast en bonus per spelare.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Skatter</strong> – vinster på casinon med EU/EES-licens är vanligtvis skattefria.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Casinon utanför EU/EES</strong> – vinster kan beskattas med 30%.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Verifiering</strong> – uppladdning av pass eller ID-kort samt adressbevis krävs vanligtvis.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>BankID</strong> – är inte tillgängligt på de flesta utländska casinon.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Betalningsmetoder</strong> – Visa, Mastercard, Skrill, Neteller, kryptovalutor och banköverföringar.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Swish och Trustly</strong> – finns inte på alla internationella casinon.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Insatsgränser</strong> – är ofta högre än hos operatörer med svensk licens.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Spelautomater</strong> – slots med Bonus Buy och avancerade funktioner finns tillgängliga.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Spelutbud</strong> – vanligtvis fler slots, live casino, crash-spel och jackpottar.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Utbetalningshastighet</strong> – från några minuter till flera arbetsdagar beroende på betalningsmetod.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Spelarskydd</strong> – regleras av den licensmyndighet som har utfärdat casinots licens.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Klagomål och tvister</strong> – hanteras via regulatorn som har licensierat operatören.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Ansvarsfullt spelande</strong> – många casinon erbjuder egna insättningsgränser och självavstängning.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>VIP-program</strong> – finns hos de flesta internationella casinon.</div></li>
+      <li><span class="qf-icon">i</span><div><strong>Kryptovalutor</strong> – accepteras betydligt oftare än hos svensklicensierade casinon.</div></li>
     </ul>
   </div>
 
-  <!-- WHAT IS -->
-  <h2 class="section-h2">Vad är ett casino utan svensk licens?</h2>
-
-  <p class="art-p">
-    <strong>Ett casino utan svensk licens är ett nätcasino som regleras av en annan myndighet än Spelinspektionen.</strong>
-  </p>
-
-  <p class="art-p">
-    Vanliga licensutfärdare är exempelvis Malta Gaming Authority eller Curaçao Gaming Control Board,
-    som sätter egna regler för säkerhet, bonusar och betalningar.
-  </p>
-
-  <p class="art-p">
-    I praktiken fungerar dessa casinon på nästan samma sätt som de svenska – du registrerar ett konto,
-    gör en insättning och börjar spela. Skillnaden ligger i regelverket, där utländska casinon ofta erbjuder
-    större frihet, som spel utan paus.
-  </p>
-
-  <p class="art-p">
-    Denna frihet märks bland annat i att bonusar och kampanjer kan vara mer generösa,
-    betalningsmetoderna fler (inklusive kryptovalutor), och att det inte finns samma insättnings-
-    eller tidsgränser som på svenska casinon. Däremot saknas system som Spelpaus, och vinster
-    kan bli skattepliktiga om casinot är licensierat utanför EU/EES. Att många spelare söker sig
-    hit beror på att Spellagen (2018:1138) införde strikta begränsningar i Sverige år 2019, vilket
-    fick flera operatörer att avstå från att ansöka om svensk licens.
-  </p>
-
-  <h3 class="section-h3">Är det lagligt att spela på casinon utan svensk licens?</h3>
-
-  <p class="art-p">
-    <strong>Ja, det är lagligt att spela på casinon utan svensk licens.</strong>
-    Så här formulerar sig Spelinspektionen:
-  </p>
-
-  <div class="art-quote">
-    "Det är inte olagligt att spela hos ett spelbolag eller delta i ett lotteri som saknar licens
-    i Sverige, men gör du det så omfattas du inte av de skydd som finns i spellagen, till exempel
-    möjligheten att kunna stänga av dig från spel."
+  <div class="hero-banner">
+    <div class="hero-image-suits">&#9827; &#9824;</div>
+    <div class="hero-image-suits-right">&#9830; &#9829;</div>
+    <div class="hero-image-inner">
+      <div class="hero-image-title">Spela på <em>licensierade</em> internationella casinon</div>
+      <div class="hero-image-sub">Säkra alternativ utan svensk licens – granskade av experter</div>
+    </div>
   </div>
 
-  <!-- PROS CONS -->
-  <div class="pros-cons-wrap" id="fordelar">
-    <h3>Fördelar och nackdelar med ett casino utan licens från Sverige</h3>
-    <p style="font-size:13.5px;color:var(--sub);margin-bottom:16px">
-      Att spela på ett casino utan svensk licens innebär flera fördelar, men det finns några
-      saker att ha i åtanke. Här är de viktigaste för- och nackdelarna från vårt expertteam:
-    </p>
+  <h2 class="section-h2">Vad är casino utan svensk licens</h2>
+
+  <p class="art-p">Ett onlinecasino utan svensk licens är en operatör som inte har fått licens av den svenska spelmyndigheten Spelinspektionen och inte arbetar inom det svenska licenssystemet för spel om pengar. I stället använder sådana sajter vanligtvis licenser från andra jurisdiktioner, oftast Malta Gaming Authority (MGA) eller Curacao. För spelare från Sverige innebär det att casinot följer reglerna i det land som har utfärdat licensen, inte kraven i svensk spellagstiftning.</p>
+
+  <p class="art-p">Sådana sajter är inte anslutna till självavstängningssystemet Spelpaus, använder inte de gemensamma svenska bonusbegränsningarna och kan erbjuda: regelbundna bonuskampanjer; VIP-program och lojalitetsprogram; cashback för återkommande spelare; turneringar och säsongsbaserade kampanjer; extra belöningar för aktivitet.</p>
+
+  <p class="art-p">Många svenska onlinecasinon med lokal licens kan endast erbjuda en välkomstbonus per kund. Samtidigt väljer många spelare casino utan svensk licens när de vill ha regelbundna bonusar, cashback, lojalitetsprogram och mer flexibla villkor för återkommande kunder.</p>
+
+  <p class="art-p">Dessutom får spelare tillgång till spelformat som inte alltid finns på den reglerade svenska marknaden: slots med Bonus Buy-funktion; crash-spel; provably fair-spel; utökade jackpott-nätverk; exklusiva spelautomater från internationella leverantörer. Internationella operatörer erbjuder också ofta fler betalningsmetoder, inklusive kryptovalutor, Skrill, Neteller och andra e-plånböcker.</p>
+
+  <h3 class="section-h3">Är det lagligt att spela på casino utan svensk licens</h3>
+
+  <p class="art-p">Många spelare överväger internetcasino utan svensk licens på grund av mer förmånliga bonusar, bredare lojalitetsprogram, tillgång till kryptobetalningar och ett större spelutbud. Därför innehåller vår lista över casinon utan svensk licens operatörer med pålitliga internationella licenser, tydliga utbetalningsvillkor och gott rykte bland spelare.</p>
+
+  <p class="art-p">Samtidigt är det viktigt att förstå att sådana casinon inte regleras av den svenska spelmyndigheten Spelinspektionen och arbetar enligt reglerna i en annan jurisdiktion. Före registrering rekommenderas det att noggrant granska operatörens licens, villkoren för spelare från Sverige och reglerna för uttag.</p>
+
+  <p class="art-p">Casinon utan svensk licens kan erbjuda villkor som inte finns på den licensierade svenska marknaden, inklusive regelbundna bonusar, VIP-program, högre insatsgränser och ett bredare utbud av spelautomater. Ansvaret för att kontrollera licensen och villkoren hos den enskilda operatören ligger dock alltid hos spelaren.</p>
+
+  <div class="hero-banner">
+    <div class="hero-image-suits">&#9827; &#9824;</div>
+    <div class="hero-image-suits-right">&#9830; &#9829;</div>
+    <div class="hero-image-inner">
+      <div class="hero-image-title">Se vår <em>topplista</em> 2026</div>
+      <div class="hero-image-sub">Granskade casinon med pålitliga licenser och snabba uttag</div>
+    </div>
+  </div>
+
+  <h2 class="section-h2">Fördelar och nackdelar med casino utan svensk licens</h2>
+
+  <p class="art-p">Casinon utan svensk spellicens lockar spelare med mer flexibla villkor, ett brett bonusutbud och fler spelmöjligheter. Före registrering är det dock viktigt att väga in både fördelar och begränsningar, eftersom dessa skiljer internationella plattformar från licensierade operatörer i Sverige.</p>
+
+  <div class="pros-cons-wrap">
     <div class="pros-cols">
       <div>
-        <div class="pros-col-title title-pros">&#128077; Fördelar</div>
+        <div class="pros-col-title title-pros">Fördelar</div>
         <ul class="pros-list">
-          <li>Ingen Spelpaus: Spel utan Spelpaus</li>
-          <li>Stora bonusar: Optimerad spelbudget</li>
-          <li>Inga insättningsgränser: Högre insättningar för större vinster</li>
-          <li>Skattefria vinster: EU-casinon är skattefria</li>
-          <li>Snabbare spel: Ingen 3-sekundersregel</li>
-          <li>Högre RTP: Bättre vinstchans</li>
-          <li>Kryptovaluta: Snabba och anonyma transaktioner</li>
+          <li>Regelbundna bonusar, cashback och kampanjer för återkommande spelare</li>
+          <li>Ingen begränsning till en enda bonus under hela speltiden</li>
+          <li>Större välkomstpaket och free spins</li>
+          <li>Tillgång till VIP-program med verkliga förmåner</li>
+          <li>Stöd för kryptovalutor, Skrill, Neteller och andra e-wallets</li>
+          <li>Slots med Bonus Buy och avancerade bonusmekaniker</li>
+          <li>Högre insats- och uttagsgränser</li>
+          <li>Tusentals spel från internationella leverantörer på ett konto</li>
+          <li>Crash-spel, provably fair-spel och andra moderna format finns ofta</li>
+          <li>Färre begränsningar för lojalitetsprogram och turneringar</li>
         </ul>
       </div>
       <div>
-        <div class="pros-col-title title-cons">&#128078; Nackdelar</div>
+        <div class="pros-col-title title-cons">Nackdelar</div>
         <ul class="pros-list">
-          <li>Ej svenska kronor: Valutakonvertering</li>
-          <li>Engelskspråkig support: Språkbarriärer</li>
-          <li>Alternativ självuteslutning: Krångligare än Spelpaus</li>
-          <li>Skatter utanför EU/EES: Särskilda skatteregler kan gälla</li>
-          <li>Inga svenska tjänster: Erbjuder inte BankID, Zimpler eller Swish</li>
-          <li>Begränsat konsumentskydd: Ingen Spelinspektionens tillsyn</li>
+          <li>Spelpaus-systemet gäller inte för sådana casinon</li>
+          <li>Ingen reglering från Spelinspektionen</li>
+          <li>Spelarskyddet beror på licensens jurisdiktion</li>
+          <li>Verifiering sker vanligtvis manuellt</li>
+          <li>Dokumentgranskning kan ta flera dagar</li>
+          <li>Vissa betalningsmetoder som är populära i Sverige kan saknas</li>
+          <li>Skatteplikt kan uppstå vid spel på casinon utanför EU/EES</li>
+          <li>Uttagsvillkor kan skilja sig mellan olika operatörer</li>
+          <li>Inte alla casinon erbjuder support på svenska</li>
+          <li>Spelaren måste själv kontrollera licensens tillförlitlighet</li>
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- BONUSES -->
-  <h2 class="section-h2" id="bonusar">Bonusar på casino utan licens</h2>
+  <h2 class="section-h2">Bonusar på casino utan svensk licens</h2>
 
-  <p class="art-p">
-    En av de största anledningarna till att svenska spelare väljer casinon utan licens är just
-    bonusarna. Svenska licensierade casinon är bundna av strikta regler som begränsar
-    välkomstbonusar och kräver att free spins värderas till maximalt 1 kr styck.
-    Sajter utanför det svenska regelverket har inga sådana begränsningar.
-  </p>
+  <p class="art-p">Till skillnad från den licensierade svenska marknaden, där operatörer begränsas av regler för bonuserbjudanden, kan internationella casinon erbjuda inte bara ett välkomstpaket utan även regelbundna kampanjer för befintliga kunder. På de bästa casinona utan svensk licens får spelare ofta insättningsbonusar på flera av de första insättningarna, free spins, cashback, reload-bonusar, VIP-belöningar och deltagande i turneringar. Därför är det totala värdet av erbjudandena vanligtvis högre än hos många svenska operatörer, där extra bonusar efter registrering förekommer betydligt mer sällan.</p>
 
-  <p class="art-p">
-    Det betyder dock inte att alla bonusar är fördelaktiga. <strong>Omsättningskrav på 40x eller
-    högre</strong> gör i praktiken bonusen omöjlig att tillgodogöra sig. Titta alltid på tre saker:
-    omsättningskravet, tidsgränsen för att uppfylla kravet och vilka spel som bidrar till omsättningen.
-  </p>
+  <p class="art-p">När bonusar jämförs är det dock viktigt att inte bara titta på det maximala beloppet. De verkliga användningsvillkoren är mycket viktigare: omsättningskrav för bonusen; giltighetstid för bonusmedel; maximalt uttag av vinster; minsta insättning för aktivering; tillåtna spel för att uppfylla omsättningskravet; begränsningar för maximal insats; tillgänglighet för spelare från Sverige.</p>
+
+  <p class="art-p">Till exempel är en bonus på €500 med 25x omsättningskrav ofta mer förmånlig än ett erbjudande på €1 000 med krav på 50x eller 60x. Därför tog vi vid sammanställningen av rankingen hänsyn inte bara till bonusens storlek utan också till dess praktiska värde för spelarna. I vår ranking ingår casinon med konkurrenskraftiga bonusvillkor, rimliga omsättningskrav och tydliga regler för uttag. Denna metod gör att spelare kan få mer värde jämfört med många svensklicensierade onlinecasinon, där bonusmöjligheterna är betydligt begränsade av gällande reglering.</p>
+
+  <h3 class="section-h3">Vilka bonusar förekommer oftast</h3>
+
+  <p class="art-p">En av de största fördelarna med casinona i vår ranking är att de erbjuder betydligt fler bonusar än de flesta licensierade svenska operatörer. Spelare får tillgång inte bara till ett välkomsterbjudande utan också till återkommande kampanjer som kan ge extra värde under hela tiden casinot används.</p>
 
   <div class="t-wrap">
     <table>
       <thead>
-        <tr><th>Typ av bonus</th><th>Storlek</th><th>Omsättning</th><th>Giltighetstid</th></tr>
+        <tr><th>Bonustyp</th><th>Beskrivning</th></tr>
       </thead>
       <tbody>
-        <tr><td class="td-bold">Välkomstbonus</td><td>50–200%</td><td>25x–45x</td><td>14–30 dagar</td></tr>
-        <tr><td class="td-bold">Ingen insättningsbonus</td><td>50–200 kr / 20–100 FS</td><td>30x–60x</td><td>3–7 dagar</td></tr>
-        <tr><td class="td-bold">Cashback</td><td>5–20% av förluster</td><td>Inget krav</td><td>Veckovis</td></tr>
-        <tr><td class="td-bold">Reload</td><td>25–75%</td><td>20x–35x</td><td>7 dagar</td></tr>
-        <tr><td class="td-bold">Kryptovalutabonus</td><td>+25% extra</td><td>20x</td><td>7 dagar</td></tr>
-        <tr><td class="td-bold">VIP / Lojalitet</td><td>Individuellt</td><td>10x–20x</td><td>Obegränsat</td></tr>
+        <tr><td class="td-bold">Welcome Bonus</td><td>Välkomstbonus för nya spelare efter registrering och första insättning. Innehåller vanligtvis bonuspengar, free spins eller ett kombinerat erbjudande och hjälper till att öka startbudgeten.</td></tr>
+        <tr><td class="td-bold">Free Spins</td><td>Gratis snurr på utvalda slots utan extra kostnad. Gör det möjligt att testa spelautomater och få riktiga vinster om kampanjvillkoren uppfylls.</td></tr>
+        <tr><td class="td-bold">Cashback</td><td>Återbetalning av en del av förlorade medel under en viss period. Vanligtvis kompenserar casinot 5–25% av nettoförlusten, vilket kan minska risken vid längre spel.</td></tr>
+        <tr><td class="td-bold">Reload Bonus</td><td>Bonus på återkommande insättningar för befintliga kunder. Används för att öka spelbalansen efter att välkomstpaketet har använts och finns ofta varje vecka eller månad.</td></tr>
+        <tr><td class="td-bold">Crypto Bonus</td><td>Särskild bonus för spelare som använder kryptovalutor för insättningar. Innehåller ofta en högre bonusprocent, extra free spins eller exklusiva kampanjer.</td></tr>
+        <tr><td class="td-bold">VIP / Loyalty Bonus</td><td>Belöningar för aktiva spelare inom ett lojalitetsprogram. Kan omfatta personliga bonusar, högre cashback, snabbare utbetalningar, gåvor och individuell service.</td></tr>
       </tbody>
     </table>
   </div>
 
-  <div class="notice warn">
-    <div class="notice-title">&#9888; Viktigt om bonusvillkor</div>
-    Spara alltid en skärmdump av bonusvillkoren när du aktiverar bonusen. Sajter utan licens
-    kan ändra villkoren utan förhandsavisering och du kan inte vända dig till Spelinspektionen vid tvist.
-  </div>
+  <p class="art-p">På internationella casinon har reload-bonusar, cashback och VIP-program oftast störst värde, eftersom de är tillgängliga löpande. Just sådana erbjudanden gör det möjligt att få extra fördelar betydligt längre än den enda välkomstbonus som många svenska licensierade casinon vanligtvis erbjuder.</p>
 
-  <!-- TAX -->
-  <h2 class="section-h2" id="skatt">Skatt på casinon utan svensk licens</h2>
+  <h3 class="section-h3">Så väljer du de bästa bonusarna på casino utan svensk licens</h3>
 
-  <p class="art-p">
-    När du spelar på ett casino utan svensk spellicens är det viktigt att förstå hur skattereglerna
-    fungerar. <strong>Skattereglerna varierar beroende på om casinot är licensierat inom EU/EES
-    eller utanför dessa områden.</strong>
-  </p>
+  <p class="art-p">När du väljer det bästa internetcasinot utan svensk licens är det viktigt att inte bara bedöma bonusens storlek. För spelare från Sverige är licens, uttagsvillkor, spelkvalitet och operatörens övergripande tillförlitlighet mycket viktigare. Nedan finns de viktigaste kriterierna som kan användas för att jämföra Arctic Casino, Rich Moose Casino, LeoVegas, Casino Joy och Gambiva.</p>
+
+  <p class="art-p"><strong>Licensiering och säkerhet.</strong> När vi bedömer ett casino börjar vi alltid med licensen. För spelare från Sverige är detta en av de viktigaste indikatorerna på tillförlitlighet, eftersom licensen avgör operatörens arbetsregler, hur klagomål hanteras och graden av kontroll från regulatorn. När vi sammanställer rankingen kontrollerar vi: licensens giltighet; regleringsjurisdiktion; operatörens historik; förekomst av oberoende spelrevisioner; rutiner för spelverifiering; verktyg för kontoskydd. LeoVegas och Rich Moose arbetar med MGA-licens, som anses vara en av de striktaste i branschen. Arctic Casino, Casino Joy och Gambiva använder Curacao-licens och erbjuder mer flexibla bonusvillkor samt ett brett urval av betalningsmetoder.</p>
+
+  <p class="art-p"><strong>Bonusar och villkor.</strong> Vi bedömer inte bara bonusens storlek utan även dess verkliga värde för spelaren. I praktiken kan en bonus på €500 med 25x omsättningskrav vara betydligt mer förmånlig än ett erbjudande på €1 000 med 50x omsättning. När vi analyserar bonusar tar vi hänsyn till: omsättningskrav; maximal insats; begränsningar för uttag av vinster; bonusens giltighetstid; minsta insättning; förekomst av dolda begränsningar. De största välkomstpaketen erbjuds av Gambiva och Arctic Casino. Rich Moose sticker ut med ett stort antal free spins, medan LeoVegas fokuserar på tydliga villkor och regelbundna kampanjer för befintliga kunder. När du väljer bonus bör du vara särskilt uppmärksam på omsättningskrav, maximalt uttag och insatsbegränsningar.</p>
+
+  <p class="art-p"><strong>Spelutbud och leverantörer.</strong> En stor spelkatalog har bara betydelse om den innehåller kvalitativa leverantörer och populära spelkategorier. Därför bedömer vi inte bara antalet spel utan också variationen. Vid granskning av casinon analyserar vi: antalet spelautomater; utbudet av live casino; förekomst av jackpottar; urvalet av bordsspel; listan över leverantörer; tillgänglighet av moderna spelformat. Det bredaste spelutbudet finns hos Gambiva och LeoVegas. Dessa plattformar erbjuder tusentals slots, live casino, bordsspel och innehåll från ledande internationella leverantörer. Arctic Casino och Rich Moose ger också tillgång till stora spelbibliotek, inklusive populära automater med jackpottar.</p>
+
+  <p class="art-p"><strong>Betalningsmetoder och uttagstid.</strong> För de flesta spelare är hastigheten på vinstuttag viktigare än bonusens storlek. Därför granskar vi varje casinos betalningsinfrastruktur separat. Operatörer som hamnar i rankingen har: populära betalningsmetoder; tydliga uttagsgränser; snabb behandling av uttagsbegäranden; transparent avgiftspolicy; bekväma alternativ för insättning; stabil funktion hos betalningssystemen. För spelare från Sverige erbjuder LeoVegas, Rich Moose och Gambiva det bredaste urvalet av betalningsmetoder. Förutom bankkort finns e-plånböcker tillgängliga och i vissa fall även kryptovalutor. De snabbaste utbetalningarna behandlas vanligtvis via e-plånböcker, medan banköverföringar kan ta flera arbetsdagar.</p>
+
+  <p class="art-p"><strong>Användarvänlighet.</strong> Även en stark bonus kan inte kompensera för ett opraktiskt gränssnitt. Under testningen bedömer vi hur bekvämt casinot är att använda både på dator och mobila enheter. Särskild uppmärksamhet ägnas åt: sajtens hastighet; mobiloptimering; navigering mellan sektioner; hur enkelt det är att söka efter spel; registreringsprocessen; tillgänglighet till huvudfunktionerna. LeoVegas anses vara ett av de mest användarvänliga casinona för mobilspel tack vare ett väloptimerat gränssnitt. Gambiva och Arctic Casino erbjuder också moderna mobilversioner med snabb tillgång till spel, betalningar och bonusar.</p>
+
+  <p class="art-p"><strong>Rykte och andra spelaromdömen.</strong> Innan ett casino läggs till i rankingen undersöker vi varumärkets rykte och analyserar spelarrecensioner. Fokus ligger inte på reklamkommentarer utan på inlägg om verkliga erfarenheter av att använda casinot. Vi kontrollerar: omdömen om utbetalningar; historik över klagomål; hur snabbt tvister löses; spelarnas åsikter om bonusar; casinots driftsstabilitet; varumärkets allmänna rykte på marknaden. LeoVegas har den längsta historiken och hög igenkänning bland spelare. Rich Moose har också gott rykte tack vare MGA-licensen och ett stabilt betalningssystem. Gambiva lockar spelare med ett stort spelutbud och höga uttagsgränser.</p>
+
+  <p class="art-p"><strong>Kundservice.</strong> Supportens kvalitet blir särskilt viktig vid verifiering eller uttag av större belopp. Därför testar vi supporten innan ett casino tas med i rankingen. Vid bedömningen beaktas: operatörernas svarshastighet; tillgång till livechatt; kvaliteten på rådgivningen; tillgång till support dygnet runt; bekväm kontakt via e-post; hur komplett hjälpsektionen är. Alla casinon i rankingen erbjuder support via livechatt och e-post. LeoVegas och Rich Moose utmärker sig vanligtvis genom snabbare svarstid och en detaljerad kunskapsbas för vanliga frågor.</p>
+
+  <p class="art-p"><strong>Ansvarsfullt spelande och spelgränser.</strong> Även casinon utan svensk licens bör tillhandahålla verktyg för att kontrollera spelaktivitet. Vi ser tillgången till sådana funktioner som ett obligatoriskt kriterium för att komma med i rankingen. Vid granskningen analyserar vi förekomsten av: insättningsgränser; förlustgränser; insatsgränser; tillfällig blockering av konto; självavstängningsfunktioner; verktyg för kontroll av speltid. Trots avsaknad av svensk licens erbjuder alla granskade casinon verktyg för ansvarsfullt spelande. Spelare kan sätta insättningsgränser, tillfälligt begränsa åtkomst till kontot eller använda interna självavstängningsmekanismer som respektive operatör tillhandahåller.</p>
+
+  <h2 class="section-h2">Skatter på casino utan svensk licens</h2>
+
+  <p class="art-p">Beskattning av vinster på casino utan svensk licens beror inte på vinstens eller bonusens storlek utan på den jurisdiktion där operatören är verksam. Därför rekommenderar vi att man vid val av casino kontrollerar inte bara bonusvillkoren utan också plattformens licens. För spelare från Sverige är det avgörande om operatören är registrerad i ett EU/EES-land eller utanför Europeiska ekonomiska samarbetsområdet. Detta kan påverka spelarens skatteplikt för mottagna vinster.</p>
 
   <div class="t-wrap">
     <table>
@@ -1013,199 +1151,190 @@
     </table>
   </div>
 
-  <div class="accordion">
-    <div class="acc-item open">
-      <div class="acc-head">
-        Skatt på casinon inom EU <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Vinster från casinon licensierade inom EU/EES (exempelvis Malta eller Estland) är normalt skattefria för svenska spelare. Du behöver alltså inte deklarera vinster från ett MGA-licensierat casino – detta är ett av de starkaste skälen till att många spelare föredrar EU-licensierade alternativ.</p>
-      </div>
-    </div>
-    <div class="acc-item">
-      <div class="acc-head">
-        Skatt på casinon utanför EU <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Vinster från casinon licensierade utanför EU/EES, exempelvis Curaçao, är i regel skattepliktiga med 30 %. Du är skyldig att redovisa dessa i din inkomstdeklaration under posten "övrig inkomst". Kom ihåg att förluster inte är avdragsgilla mot övriga inkomster.</p>
-      </div>
-    </div>
-    <div class="acc-item">
-      <div class="acc-head">
-        Hur betalar man skatt på vinster utanför EU? <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Du redovisar spelvinster under "övriga inkomster" i din inkomstdeklaration (INK1, bilaga T1). Skattesatsen är 30 %. Spara alltid transaktionshistorik och uttagskvitton som underlag för Skatteverket.</p>
-      </div>
+  <h3 class="section-h3">Casino med EU/EES-licens</h3>
+
+  <p class="art-p">Casinon som arbetar med licenser från EU/EES-länder ses ofta som ett mer lättförståeligt alternativ för spelare från Sverige tack vare höga regleringsstandarder och tydliga krav på operatörer. Det vanligaste exemplet är licensen från Malta Gaming Authority (MGA), som används av många stora internationella varumärken. Sådana casinon är vanligtvis skyldiga att följa strikta regler för säkerhet kring spelarmedel, identitetskontroll, ansvarsfullt spelande och hantering av klagomål. Dessutom inger EU/EES-licenser ofta större förtroende hos spelare jämfört med mindre reglerade offshore-jurisdiktioner.</p>
+
+  <p class="art-p">Samtidigt bör man inte automatiskt anta att alla casinon med EU/EES-licens är likadana. Före registrering rekommenderar vi att man separat kontrollerar: operatörens registreringsland; casinots licensuppgifter; villkor för spelare från Sverige; regler för uttag av vinster; krav på verifiering; aktuella skatteregler. Även om ett casino arbetar med EU/EES-licens kan användarvillkor, bonuspolicy, utbetalningsgränser och möjliga skattekonsekvenser skilja sig beroende på den specifika operatören. Därför bör licensen betraktas som ett viktigt bedömningskriterium, men inte som den enda indikatorn på casinots tillförlitlighet.</p>
+
+  <h3 class="section-h3">Casino med licens utanför EU/EES</h3>
+
+  <p class="art-p">Casinon med licens utanför EU/EES lockar ofta spelare med större bonusar, höga uttagsgränser, stöd för kryptovalutor och mindre strikta kampanjbegränsningar. En betydande del av de internationella casinon som är populära bland spelare från Sverige tillhör just denna kategori. När man väljer sådana operatörer rekommenderar vi dock att man ägnar extra uppmärksamhet åt casinots villkor. Jämfört med licensierade europeiska plattformar kan reglerna skilja sig avsevärt beroende på den specifika jurisdiktionen och operatören.</p>
+
+  <p class="art-p">Före registrering bör man noggrant granska: casinots licens och regulator; krav på identitetsverifiering; lista över nödvändiga dokument för uttag; handläggningstider för utbetalningar; gränser för uttag av vinster; regler för användning av bonusar; villkor för spelare från Sverige; möjliga skatteförpliktelser. Det är särskilt viktigt att i förväg bekanta sig med KYC-processen. Många casinon utanför EU/EES kräver uppladdning av pass eller ID-kort, bevis på bostadsadress och ibland bekräftelse av betalningsmetod. Innan kontrollen är slutförd kan uttag vara begränsade. Det rekommenderas också att kontrollera maximala uttagsgränser och handläggningstider för uttagsbegäranden. Dessa villkor kan skilja sig märkbart mellan olika operatörer även när bonusstorleken är densamma.</p>
+
+  <p class="art-p">Enligt vår erfarenhet publicerar pålitliga casinon utanför EU/EES all licensinformation, bonusregler, uttagsgränser och dokumentkrav öppet. Om sådan information saknas eller är ofullständig är det en anledning att granska operatören mer noggrant innan man gör en insättning.</p>
+
+  <blockquote class="art-quote">Varför licensen är viktigare än bonusen. De bästa casinona utan svensk licens erbjuder ofta stora välkomstpaket, free spins och lojalitetsprogram. När man väljer plattform rekommenderar vi dock att först bedöma licensen och operatörens juridiska status, och först därefter jämföra bonuserbjudanden. Denna metod hjälper till att undvika obehagliga överraskningar efter en vinst och gör det tydligt i förväg vilka regler det valda casinot följer.</blockquote>
+
+  <div class="hero-banner">
+    <div class="hero-image-suits">&#9827; &#9824;</div>
+    <div class="hero-image-suits-right">&#9830; &#9829;</div>
+    <div class="hero-image-inner">
+      <div class="hero-image-title">Jämför <em>bonusar</em> och villkor</div>
+      <div class="hero-image-sub">Hitta det bästa erbjudandet för spelare från Sverige</div>
     </div>
   </div>
 
-  <!-- PAYMENT -->
-  <h2 class="section-h2" id="betalning">Betalningsmetoder</h2>
+  <h2 class="section-h2">Betalningsmetoder</h2>
 
-  <p class="art-p">
-    Eftersom sajterna saknar svensk licens kan svenska banker ibland blockera kortbetalningar.
-    <strong>Kryptovalutor</strong> är den metod som i praktiken alltid fungerar och ger dessutom
-    snabbast uttag – ofta inom 30 minuter. E-plånböcker som Skrill och Neteller fungerar på de
-    flesta sajter.
-  </p>
+  <p class="art-p">På internetcasino utan svensk licens skiljer sig betalningsmetoderna åt när det gäller hastighet, avgifter och tillgänglighet. Vi kontrollerar varje metod inte bara formellt, utan utifrån verkliga insättningar och uttag för spelare från Sverige, eftersom samma metod kan fungera olika på olika casinon.</p>
 
   <div class="pay-wrap">
     <span class="pay-chip">Bitcoin (BTC)</span>
     <span class="pay-chip">Ethereum (ETH)</span>
     <span class="pay-chip">Tether (USDT)</span>
     <span class="pay-chip">Litecoin (LTC)</span>
-    <span class="pay-chip">Visa</span>
-    <span class="pay-chip">Mastercard</span>
+    <span class="pay-chip">XRP (Ripple)</span>
+    <span class="pay-chip">BNB (BEP-20)</span>
     <span class="pay-chip">Skrill</span>
     <span class="pay-chip">Neteller</span>
     <span class="pay-chip">MuchBetter</span>
-    <span class="pay-chip">Banköverföring</span>
-    <span class="pay-chip">XRP / Ripple</span>
-    <span class="pay-chip">BNB / BEP-20</span>
+    <span class="pay-chip">Visa</span>
+    <span class="pay-chip">Mastercard</span>
+    <span class="pay-chip">Bank Transfer</span>
+    <span class="pay-chip">Apple Pay</span>
+    <span class="pay-chip">Google Pay</span>
   </div>
 
-  <!-- RATINGS -->
-  <h2 class="section-h2" id="betyg">Våra betygskriterier</h2>
+  <p class="art-p"><strong>Crypto.</strong> Kryptovalutor används i första hand för snabba och internationella transaktioner utan banksystemens inblandning. Bitcoin och Ethereum används oftare för större överföringar, Tether (USDT) är populärt tack vare sin stabila kurs, medan Litecoin och XRP används för snabbare och billigare transaktioner. BNB (BEP-20) förekommer på casinon som arbetar med Binance-ekosystemet. Vanligtvis ger kryptovalutor snabbare insättningar och uttag jämfört med klassiska metoder, men de kräver noggrannhet kring adresser och överföringsnätverk.</p>
 
-  <p class="art-p">
-    Våra casinorecensioner kombinerar praktisk testning med systematisk bedömning. Genom att
-    själva prova insättningar, uttag, spel och kundsupport kan vi ge en helhetsbild som är
-    både rättvis och pålitlig.
-  </p>
+  <p class="art-p"><strong>E-wallets.</strong> Elektroniska plånböcker används som ett mellanliggande betalningsverktyg mellan banken och casinot. Skrill och Neteller ger oftast snabba insättningar och snabbare utbetalningar, särskilt på casinon med europeiska licenser. MuchBetter är inriktat på mobila betalningar och är praktiskt för vardagliga transaktioner. Den största fördelen med e-wallets är hög behandlingshastighet och ett enklare uttagssystem jämfört med bankkort.</p>
 
-  <div class="rating-rows">
-    <div class="rating-row">
-      <span class="r-label">Säkerhet och licens</span>
-      <div class="r-bar"><div class="r-fill" style="width:65%"></div></div>
-      <span class="r-val">6.5</span>
-    </div>
-    <div class="rating-row">
-      <span class="r-label">Bonusar</span>
-      <div class="r-bar"><div class="r-fill" style="width:89%"></div></div>
-      <span class="r-val">8.9</span>
-    </div>
-    <div class="rating-row">
-      <span class="r-label">Spelutbud</span>
-      <div class="r-bar"><div class="r-fill" style="width:91%"></div></div>
-      <span class="r-val">9.1</span>
-    </div>
-    <div class="rating-row">
-      <span class="r-label">Utbetalningar</span>
-      <div class="r-bar"><div class="r-fill" style="width:72%"></div></div>
-      <span class="r-val">7.2</span>
-    </div>
-    <div class="rating-row">
-      <span class="r-label">Mobilanpassning</span>
-      <div class="r-bar"><div class="r-fill" style="width:80%"></div></div>
-      <span class="r-val">8.0</span>
-    </div>
-    <div class="rating-row">
-      <span class="r-label">Kundsupport</span>
-      <div class="r-bar"><div class="r-fill" style="width:75%"></div></div>
-      <span class="r-val">7.5</span>
+  <p class="art-p"><strong>Cards.</strong> Bankkort är den mest universella betalningsmetoden och finns tillgängliga på nästan alla casinon. De passar för insättningar från vanliga bankkonton och kräver inga extra tjänster. Vid uttag fungerar kort dock ofta långsammare, eftersom transaktioner går genom bankkontroll och kan ta flera dagar.</p>
+
+  <p class="art-p"><strong>Bank.</strong> Banköverföring används för större belopp och betraktas som det mest klassiska sättet att ta ut pengar. Det passar spelare som föredrar direkta transaktioner mellan bank och casino. Den största nackdelen är längre behandlingstid, som kan vara från flera arbetsdagar upp till en vecka beroende på bank och casinooperatör.</p>
+
+  <p class="art-p"><strong>Mobila betalningstjänster Apple Pay och Google Pay.</strong> Dessa används för snabba insättningar direkt via telefon eller operatörernas mobilappar. Den här metoden väljs oftast för små och medelstora belopp, eftersom den inte kräver inmatning av bankkortsuppgifter och gör det möjligt att fylla på kontot med bara några klick. Den största fördelen med metoden är bekvämlighet och snabb insättning, särskilt vid spel från mobil enhet. Samtidigt finns begränsningar: transaktionsgränserna är vanligtvis lägre än för bankkort och e-plånböcker, och avgifter kan vara högre beroende på leverantör. För spelare från Sverige är det viktigt att komma ihåg att mobila betalningstjänster inte finns på alla casinon utan svensk licens. Metodens tillgänglighet och villkor beror på den enskilda operatören, licensen och casinots betalningspartners.</p>
+
+  <div class="t-wrap">
+    <table>
+      <thead>
+        <tr><th>Betalningsmetod</th><th>Min/Max insättning</th><th>Min/Max uttag</th><th>Uttagstid</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="td-bold">Kryptovalutor</td><td>10 USDT – 1 BTC</td><td>20 USDT – 1 BTC</td><td>upp till 1 timme</td></tr>
+        <tr><td class="td-bold">Omedelbar banköverföring</td><td>10–10 000 €</td><td>20–2 000 €</td><td>10 minuter – 2 timmar</td></tr>
+        <tr><td class="td-bold">E-plånböcker</td><td>10–10 000 €</td><td>10–2 000 €</td><td>omedelbart</td></tr>
+        <tr><td class="td-bold">Bankkort</td><td>20–10 000 €</td><td>20–2 000 €</td><td>1–3 bankdagar</td></tr>
+        <tr><td class="td-bold">Mobila betalningstjänster</td><td>20–10 000 €</td><td>20–2 000 €</td><td>beror på leverantören</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="art-p">För spelare från Sverige är det viktigt att komma ihåg att inte alla nämnda metoder finns på alla casinon utan svensk licens. Tillgängligheten beror på licens, betalningsleverantörer och spelarens registreringsland, därför kontrollerar vi alltid de aktuella villkoren hos den specifika operatören före insättning.</p>
+
+  <h2 class="section-h2">Våra bedömningskriterier</h2>
+
+  <p class="art-p">När vi skapar rankingen använder vi en gemensam uppsättning parametrar som gör det möjligt att jämföra casinon utan svensk licens utifrån objektiva egenskaper. Fokus ligger på tillförlitlighet, spelvillkor och verklig användarupplevelse för spelare från Sverige.</p>
+
+  <p class="art-p"><strong>Säkerhet och licens.</strong> Vi kontrollerar licensens giltighet, regulatorn och operatörens historik. Dessutom bedömer vi förekomsten av grundläggande mekanismer för spelarskydd och hur transparent den juridiska informationen är.</p>
+
+  <p class="art-p"><strong>Bonusar.</strong> Vi analyserar bonusarnas storlek och de verkliga villkoren för att använda dem. Det viktiga är inte bara erbjudandet, utan också omsättningskrav, uttagsgränser, giltighetstid och begränsningar för spel.</p>
+
+  <p class="art-p"><strong>Spelutbud.</strong> Vi bedömer antalet slots, förekomsten av live casino, jackpottar och moderna spelformat. Vi kontrollerar också listan över leverantörer och spelmjukvarans stabilitet.</p>
+
+  <p class="art-p"><strong>Utbetalningar.</strong> Vi kontrollerar tillgängliga uttagsmetoder, handläggningstid för uttagsbegäranden och transaktionsgränser. Separat beaktar vi villkorens transparens och eventuella förseningar vid verifiering.</p>
+
+  <p class="art-p"><strong>Mobilanpassning.</strong> Vi testar casinots funktion på smartphones och surfplattor. Det är viktigt att spel, kassa och bonusar är tillgängliga utan begränsningar via mobilgränssnittet.</p>
+
+  <p class="art-p"><strong>Support.</strong> Vi kontrollerar supportens svarshastighet och kvaliteten på rådgivningen. Vi bedömer tillgång till livechatt, 24/7-tillgänglighet och förmågan att lösa frågor om utbetalningar och konto.</p>
+
+  <div class="hero-banner">
+    <div class="hero-image-suits">&#9827; &#9824;</div>
+    <div class="hero-image-suits-right">&#9830; &#9829;</div>
+    <div class="hero-image-inner">
+      <div class="hero-image-title">Casino utan <em>Spelpaus</em> – vad ska man veta?</div>
+      <div class="hero-image-sub">Läs vår guide och välj ett tryggt alternativ för spelare från Sverige</div>
     </div>
   </div>
 
-  <!-- SPELPAUS -->
-  <h2 class="section-h2" id="spelpaus">Vad är ett casino utan Spelpaus?</h2>
+  <h2 class="section-h2">Vad är Casino Utan Spelpaus</h2>
 
-  <p class="art-p">
-    <strong>Ett casino utan Spelpaus är ett nätcasino som inte är anslutet till det svenska
-    avstängningssystemet Spelpaus.</strong> Begreppet är en vanlig synonym till casino utan
-    svensk licens.
-  </p>
+  <p class="art-p">Termen casino utan Spelpaus används för onlinecasinon som inte är anslutna till Sveriges nationella självavstängningssystem Spelpaus. Sådana operatörer arbetar med licenser från andra jurisdiktioner, till exempel Malta (MGA) eller Curacao, och omfattas inte av den svenska spelmyndigheten Spelinspektionens reglering.</p>
 
-  <p class="art-p">
-    Casinon utan Spelpaus gör det möjligt för svenska spelare som blockerat sig från spel
-    i Sverige att ändå registrera sig och spela. Dessa casinon har licens i andra länder och
-    följer därför inte Spelinspektionens regler – inklusive den svenska omsorgsplikten.
-  </p>
+  <p class="art-p">För att förstå sammanhanget är det viktigt att veta att Spelpaus är ett gemensamt statligt självavstängningssystem som gäller alla licensierade svenska casinon, bettingsajter och andra speltjänster. Om en spelare aktiverar självavstängning via Spelpaus förlorar spelaren automatiskt tillgången till alla operatörer med svensk licens under den valda perioden.</p>
 
-  <div class="notice green">
-    <div class="notice-title">&#9432; Observera</div>
-    Det fortfarande går att stänga av sig från spel även på ett casino utan Spelpaus. Det
-    kräver dock att du själv aktivt begär avstängning hos varje enskild plattform eller
-    använder en tredjepartstjänst för spelblockering.
+  <p class="art-p">Därför används begreppen casino utan Spelpaus och casino utan svensk licens ofta tillsammans. I praktiken handlar det vanligtvis om samma typ av internationella casinon som accepterar spelare från Sverige men inte arbetar med svensk licens. För svenska spelare kan sådana casinon vara intressanta av flera skäl: möjlighet att få inte bara en välkomstbonus utan även regelbundna kampanjer; bredare utbud av lojalitetsprogram och VIP-belöningar; tillgång till internationella spelleverantörer och större spelbibliotek; stöd för ytterligare betalningsmetoder, inklusive kryptovalutor och e-plånböcker; avsaknad av vissa begränsningar som gäller på den licensierade svenska marknaden.</p>
+
+  <p class="art-p">Samtidigt är det viktigt att komma ihåg att casinon utan anslutning till Spelpaus inte deltar i Sveriges nationella självavstängningssystem. Om en spelare använder Spelpaus för att begränsa tillgången till spel om pengar gäller den blockeringen endast operatörer med svensk licens.</p>
+
+  <div class="notice warn">
+    <div class="notice-title">ⓘ Observera</div>
+    Det fortfarande går att stänga av sig från spel även på ett casino utan Spelpaus. Det kräver dock att du själv aktivt begär avstängning hos varje enskild plattform eller använder en tredjepartstjänst för spelblockering.
   </div>
 
-  <!-- TRUST -->
+  <p class="art-p">I vår ranking finns internationella casinon som har valts ut enligt nyckelkriterier för svenska spelare: licensens tillförlitlighet, utbetalningshastighet, spelutbud, bonusprogrammets kvalitet, betalningsmetodernas bekvämlighet och den allmänna servicenivån. Detta gör det möjligt att få tillgång till mer flexibla spelvillkor jämfört med många operatörer på den svenska marknaden.</p>
+
+  <h3 class="section-h3">Vad är viktigt att veta om Spelpaus</h3>
+
+  <p class="art-p">Spelpaus är Sveriges nationella självavstängningssystem som endast gäller casinon och operatörer med svensk licens från Spelinspektionen. Om en spelare väljer casino utan svensk licens tillämpas systemet inte automatiskt och blockerar inte åtkomsten till sådana sajter.</p>
+
+  <p class="art-p">När internationella casinon används är det viktigt att komma ihåg att skyddet mot spelaktivitet endast tillhandahålls genom operatörens egna verktyg eller tredjepartstjänster. Därför rekommenderar vi att man i förväg kontrollerar vilka funktioner för spelkontroll som finns. I sådana fall har spelare vanligtvis tillgång till: insättningsgränser; förlustgränser; begränsningar av speltid; självavstängning inom det specifika casinot; kontoblockering via support; tredjepartsprogram för blockering av sajter och appar.</p>
+
+  <p class="art-p">Om en spelare behöver strikt kontroll över tillgången till spel om pengar är det viktigt att använda ytterligare begränsningsverktyg och inte bara förlita sig på Spelpaus. Detta är särskilt relevant vid spel på internetcasino utan svensk licens, där reglerna för självavstängning bestäms separat av varje operatör.</p>
+
   <div class="trust-section">
-    <h2 class="section-h2">Varför lita på oss och vår information?</h2>
-    <p class="art-p">
-      Vi grundade sajten år 2020 för att hjälpa spelare som vill ha alternativ till det
-      svenska licenssystemet. Med <strong>över 40 års kombinerad erfarenhet</strong> av
-      spelmarknaden har vårt expertteam byggt upp en unik kunskap som kombineras med en
-      systematisk process för att guida dig till trygga och attraktiva casinon utanför Sverige.
-    </p>
-    <h3 class="section-h3">Våra betygskriterier</h3>
-    <p class="art-p">
-      Våra kriterier omfattar licens och säkerhet, spelutbud, bonusar, betalningsmetoder,
-      kundsupport samt hur casinot arbetar med ansvarsfullt spelande. Genom att själva prova
-      insättningar, uttag och spel kan vi ge en helhetsbild som är både rättvis och pålitlig.
-    </p>
+
+  <h2 class="section-h2">Varför du kan lita på vår information</h2>
+
+  <p class="art-p">Vi tar fram informationen genom en systematisk analys av villkoren hos casinon utan svensk licens, med fokus på verkliga parametrar som är viktiga för spelare från Sverige. Varje casino bedöms enligt samma metodik för att resultaten ska vara jämförbara.</p>
+
+  <p class="art-p">I granskningen analyserar vi operatörernas licenser, bonusvillkor, tillgängliga betalningsmetoder, hastighet och stabilitet i utbetalningar, kundsupportens kvalitet och förekomsten av verktyg för ansvarsfullt spelande. Särskilda begränsningar för spelare från Sverige beaktas också, inklusive registreringstillgänglighet och plattformens användarregler.</p>
+
+  <p class="art-p">Vi uppmärksammar också praktiska faktorer som påverkar den verkliga spelupplevelsen: tydlighet i uttagsvillkor, krav på verifiering, transaktionsgränser, bonusprogrammens struktur. Detta gör det möjligt att sortera bort casinon med formellt attraktiva erbjudanden men komplicerade eller otydliga villkor. Vår metod bygger på jämförelse av nyckelparametrar mellan olika operatörer, inklusive Arctic Casino, Rich Moose Casino, LeoVegas, Casino Joy och Gambiva, för att lyfta fram de mest stabila och tydliga alternativen för användare.</p>
+
+  <h3 class="section-h3">Våra granskningskriterier</h3>
+
+  <p class="art-p">När vi skapar rankingen använder vi samma metod för alla casinon utan svensk licens. Vårt team analyserar varje plattform utifrån praktiska parametrar som faktiskt påverkar spelarens upplevelse från Sverige. Vi bedömer inte casinon efter reklamlöften, utan endast efter faktiska villkor: licenser, bonusar, betalningar, uttagshastighet, spelleverantörer, mobilversion och supportkvalitet. Denna metod gör det möjligt att jämföra Arctic Casino, Rich Moose Casino, LeoVegas, Casino Joy och Gambiva enligt samma regler och lyfta fram de mest stabila och transparenta alternativen.</p>
+
+  <p class="art-p"><strong>Licens.</strong> Vi kontrollerar under vilken jurisdiktion casinot arbetar och i vilken grad licensen faktiskt reglerar operatörens verksamhet. För spelare från Sverige är MGA och Curacao särskilt viktiga, eftersom de oftast förekommer hos internationella plattformar. Vi analyserar inte bara om licensen finns, utan också dess aktualitet, företagets registrering och villkor för spelare från Sverige. När det gäller LeoVegas och Rich Moose tar vi särskilt hänsyn till MGA:s strikta krav, medan vi för Arctic Casino, Casino Joy och Gambiva kontrollerar transparensen i Curacao-licensen och operatörens historik. Detta är viktigt eftersom licensen påverkar skyddet av medel, hur tvister hanteras och reglerna för uttag av vinster.</p>
+
+  <p class="art-p"><strong>Säkerhet.</strong> Vi bedömer säkerheten genom praktiska parametrar: dataskydd, kontoverifiering, spelens rättvisa och stabila utbetalningar. Vi kontrollerar om casinot använder SSL-kryptering, hur KYC-kontrollen fungerar och hur tydligt reglerna för förvaring av spelarmedel beskrivs. Vi kontrollerar också förekomst av verktyg för ansvarsfullt spelande och interna gränser. Hos LeoVegas och Rich Moose är säkerhetsnivån högre tack vare europeisk reglering, medan det på casinon med Curacao är viktigt att även bedöma varumärkets rykte och utbetalningshistorik. För spelare från Sverige är detta kritiskt, eftersom säkerheten direkt påverkar hur snabbt tvister löses och tillgången till medel.</p>
+
+  <p class="art-p"><strong>Bonusvillkor.</strong> Vi analyserar inte bonusens storlek utan dess verkliga värde. Huvudparametrarna är wagering, maximal insats, giltighetstid och spelbegränsningar. Till exempel kan en bonus med 25x omsättning och tydliga regler vara mer förmånlig än ett stort erbjudande med 50x och hårda begränsningar. På Arctic Casino och Gambiva förekommer ofta mer aggressiva bonusar, men med olika aktiveringsvillkor, medan LeoVegas fokuserar på stabila och tydliga kampanjer. Rich Moose sticker ut med free spins och regelbundna kampanjer, medan Casino Joy erbjuder enklare men mer begränsade erbjudanden. Vi kontrollerar också om det finns dolda villkor för uttag av vinster, vilket är särskilt viktigt för spelare från Sverige.</p>
+
+  <p class="art-p"><strong>Betalningar.</strong> Betalningssystemet bedöms utifrån hastighet, tillgänglighet och gränser. Vi kontrollerar vilka metoder som faktiskt fungerar för insättningar och uttag: kort, e-wallets, kryptovalutor och banköverföringar. LeoVegas och Rich Moose erbjuder oftast mer stabila bankmetoder och e-wallets, inklusive Skrill och Neteller. Arctic Casino och Gambiva erbjuder ett bredare urval av kryptovalutaalternativ, vilket påskyndar uttag. Casino Joy kan ha begränsningar i vissa regioner. För spelare från Sverige är det viktigt att inte bara ta hänsyn till att metoden finns, utan också den faktiska uttagstiden: från omedelbara transaktioner till flera arbetsdagar beroende på betalningsmetod.</p>
+
+  <p class="art-p"><strong>Spel.</strong> Vi bedömer inte bara antalet spel utan även deras kvalitet och variation. I bedömningen ingår slots, live casino, jackpottar, crash-spel och förekomst av populära leverantörer. Gambiva och LeoVegas visar vanligtvis det bredaste utbudet, inklusive tusentals spel och live dealers. Arctic Casino och Rich Moose erbjuder ett balanserat bibliotek med fokus på slots och bonusfunktioner. Casino Joy har ett mer kompakt utbud men täcker grundläggande spelkategorier. För spelare från Sverige är inte bara katalogens bredd viktig utan även spelens stabilitet, särskilt vid mobilspel.</p>
+
+  <p class="art-p"><strong>Mobilversion.</strong> Vi testar varje casino på mobila enheter, inklusive laddningshastighet, användarvänlighet och åtkomst till huvudfunktioner. LeoVegas visar traditionellt ett av de bästa mobila gränssnitten, vilket gör det bekvämt att spela från smartphone. Gambiva och Arctic Casino har också responsiva versioner med snabb åtkomst till kassa och spel. Rich Moose och Casino Joy fungerar stabilt, men kan ibland vara långsammare i navigeringen. För spelare från Sverige är detta viktigt eftersom en stor del av spelsessionerna sker just från mobila enheter.</p>
+
+  <p class="art-p"><strong>Support.</strong> Vi kontrollerar supportens kvalitet i praktiken: svarshastighet, kompetens och tillgängliga kontaktkanaler. I första hand bedömer vi livechatt, därefter e-post och hjälpsektioner. LeoVegas och Rich Moose visar vanligtvis snabbare svar och mer strukturerad support. Gambiva och Arctic Casino har ett standardiserat supportsystem med varierande handläggningshastighet. Casino Joy kan ibland reagera långsammare på komplexa frågor, särskilt sådana som rör uttag. För spelare från Sverige är det viktigt att supporten kan lösa frågor om utbetalningar och verifiering utan dröjsmål, eftersom just dessa moment oftast orsakar problem.</p>
+
   </div>
 
-  <!-- FAQ -->
-  <h2 class="section-h2" id="faq">Vanliga frågor om casino utan svensk licens</h2>
+  <h2 class="section-h2">Vanliga frågor om casino utan svensk licens</h2>
 
   <div class="accordion">
-    <div class="acc-item open">
-      <div class="acc-head">
-        Är det olagligt att spela på casino utan licens i Sverige? <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Nej, det är inte olagligt för en privatperson. Det är operatören som bryter mot spellagen om de riktar marknadsföring mot svenska spelare utan tillstånd. Du som spelare riskerar inga rättsliga påföljder men förlorar det konsumentskydd som den svenska licensen ger.</p>
-      </div>
-    </div>
+
     <div class="acc-item">
-      <div class="acc-head">
-        Hur snabbt kan jag ta ut pengar från ett casino utan licens? <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Med kryptovaluta tar det vanligtvis 30 minuter till 4 timmar. E-plånböcker som Skrill och Neteller tar 1–24 timmar. Bankkort och banköverföringar kan ta 1–5 bankdagar och kan dessutom blockeras av din svenska bank.</p>
-      </div>
+      <div class="acc-head">Är det lagligt att spela på casino utan licens i Sverige?<span class="acc-arrow">▾</span></div>
+      <div class="acc-body"><p>Ja, för spelare från Sverige är det lagligt, eftersom det inte finns något förbud mot att använda utländska casinon. Det är viktigt att komma ihåg att sådana plattformar arbetar med utländska licenser och inte regleras av den svenska spelmyndigheten Spelinspektionen.</p></div>
     </div>
+
     <div class="acc-item">
-      <div class="acc-head">
-        Är casinon utan svensk licens skattefria? <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Vinster från casinon inom EU/EES är normalt skattefria. Vinster från casinon utanför EU/EES är skattepliktiga med 30 % och ska redovisas i din deklaration under "övriga inkomster".</p>
-      </div>
+      <div class="acc-head">Hur snabbt kan man ta ut pengar?<span class="acc-arrow">▾</span></div>
+      <div class="acc-body"><p>Tiderna beror på betalningsmetod och det specifika casinot, men vanligtvis handlar det om från några minuter till 1–3 arbetsdagar. De snabbaste utbetalningarna sker oftast via e-plånböcker och kryptovaluta, medan banköverföringar tar längre tid.</p></div>
     </div>
+
     <div class="acc-item">
-      <div class="acc-head">
-        Vad gör jag om sajten vägrar betala ut? <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Kontakta supporten med dokumentation. Om det inte hjälper, lämna in ett klagomål via Casino Guru eller AskGamblers. Du kan även initiera en chargeback via din bank om du betalat med kort.</p>
-      </div>
+      <div class="acc-head">Är casino utan svensk licens skattefritt?<span class="acc-arrow">▾</span></div>
+      <div class="acc-body"><p>Nej, inte alltid, eftersom det beror på operatörens licens. Om casinot arbetar utanför EU/EES kan vinster beskattas med 30% och behöva deklareras.</p></div>
     </div>
+
     <div class="acc-item">
-      <div class="acc-head">
-        Fungerar Spelpaus på sajter utan licens? <span class="acc-arrow">&#9660;</span>
-      </div>
-      <div class="acc-body">
-        <p>Nej. Spelpaus gäller endast svenska licensierade casinon. Om du väljer att spela utan licens är du ensam ansvarig för att hålla kontroll på ditt spelande.</p>
-      </div>
+      <div class="acc-head">Vad ska man göra om casinot inte betalar ut pengar?<span class="acc-arrow">▾</span></div>
+      <div class="acc-body"><p>Först bör man kontakta supporten och genomgå kontoverifiering, eftersom förseningar ofta beror på verifiering. Om problemet inte löses bör man vända sig till den licensmyndighet som reglerar casinot.</p></div>
     </div>
+
+    <div class="acc-item">
+      <div class="acc-head">Fungerar Spelpaus på sajter utan licens?<span class="acc-arrow">▾</span></div>
+      <div class="acc-body"><p>Nej, Spelpaus-systemet gäller endast casinon med svensk licens. Utländska plattformar är inte anslutna till denna databas, därför tillämpas blockeringen inte där.</p></div>
+    </div>
+
   </div>
 
-  <!-- RESPONSIBLE -->
-  <h2 class="section-h2" id="ansvar">Ansvarsfullt spelande</h2>
-
-  <p class="art-p">
-    Att spela på ett onlinecasino utan Spelpaus innebär att du själv behöver ta ett större ansvar.
-    Det är viktigt att känna till vilka hjälpverktyg som finns tillgängliga och hur du kan spela
-    ansvarsfullt även utan de svenska skyddsmekanismerna.
-  </p>
-
-  <div class="notice">
-    <div class="notice-title">&#128222; Behöver du hjälp?</div>
-    Kontakta Stödlinjen på <strong>020-819 100</strong> (kostnadsfritt, dygnet runt) eller besök
-    <strong>stodlinjen.se</strong> för stöd vid spelproblem. Hjälpen är anonym och kostnadsfri.
-  </div>
 
 </div>
 <!-- end page-container -->
@@ -1217,12 +1346,7 @@
 
   <div class="footer-logo-only">
     <a href="/" class="footer-logo-link">
-      <div class="footer-emblem">♠</div>
-      <div>
-        <div class="footer-logo-txt">Casino<span style="color:var(--blue)">Guiden</span>
-          <span>utan svensk licens</span>
-        </div>
-      </div>
+      <img src="logo-casino.png" alt="Casino Utan Licens Logo" style="height:56px;width:auto;display:block;"/>
     </a>
   </div>
 </footer>
